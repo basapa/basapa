@@ -7,7 +7,7 @@
  *
  * @author    Andrei Biriukov <studio2018@gmail.com>
  * @copyright 2022 Andrei Biriukov
- * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license   MIT License
  */
 declare(strict_types=1);
 
