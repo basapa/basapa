@@ -1,0 +1,25 @@
+/*
+IMPORT_PRIORITY:7
+*/
+
+/*COMMON*/
+.css_labellist_component					{text-align:left; width:auto;}
+.css_labellist_component .css_element		{}
+.css_labellist_component .css_caption		{}
+.css_labellist_component .css_description	{}
+.css_labellist_component .css_hint			{}
+
+.css_labellist_component .css_enabled		{cursor:pointer;}
+.css_labellist_component .css_disabled		{cursor:default;}
+.css_labellist_component .css_selected		{cursor:pointer;}
+
+/*INTERACTIONS*/
+.css_labellist_component a					{display:inline-block; text-decoration:none;}
+.css_labellist_component a:hover			{}
+.css_labellist_component .css_item.css_enabled a .css_item_hint			{display:none;}
+.css_labellist_component .css_item.css_enabled a:hover .css_item_hint	{display:block;}
+
+/*ITEMS*/
+.css_labellist_component .css_item			{font-weight:normal; cursor:pointer;}
+.css_labellist_component .css_item_name		{}
+.css_labellist_component .css_item_hint		{float:right;}

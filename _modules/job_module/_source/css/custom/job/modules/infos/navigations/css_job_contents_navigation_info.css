@@ -1,0 +1,26 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_contents_navigation_info							{display:inline-block; margin:4px; padding:4px; background:none; color:black; border:none;}
+.css_job_contents_navigation_info .css_header				{background:none; padding:0;}
+.css_job_contents_navigation_info .css_body					{}
+.css_job_contents_navigation_info .css_footer				{}
+
+/*COMPONENTS*/
+.css_job_contents_navigation_info .css_labellist_component_01 .css_element		{background:none; margin:0; border:none;}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item			{}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item_element	{}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_enabled		{background:none;}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_enabled:hover	{background:#0f84fb;}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_disabled		{background:none; color:#7d7d7d;}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_selected		{background:#0b71d9;}
+
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item.css_prev			{}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item.css_next			{}
+
+/*INTERACTIONS*/
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item.css_enabled a		{color:black;}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item.css_enabled a:hover	{color:white;}
+.css_job_contents_navigation_info .css_labellist_component_01 .css_item.css_selected a		{color:white;}

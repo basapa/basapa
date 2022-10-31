@@ -1,0 +1,14 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_link_text_component								{}
+.css_link_text_component .css_element					{font-weight:bold; color:#446b8f;}
+.css_link_text_component .css_caption					{}
+.css_link_text_component .css_description				{}
+.css_link_text_component .css_hint						{}
+
+/*INTERACTIONS*/
+.css_link_text_component a								{}
+.css_link_text_component a:hover						{}

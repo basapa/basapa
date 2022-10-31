@@ -1,0 +1,24 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_tab_labellist_component									{}
+.css_tab_labellist_component .css_element						{text-shadow:0 1px 0 #eeeeee; position:relative; top:1px;}
+.css_tab_labellist_component .css_item							{border:#a5c1dd solid 1px; border-bottom:none; margin:0 2px;}
+
+.css_tab_labellist_component .css_enabled						{background:#ebf3fa;}
+.css_tab_labellist_component .css_enabled:hover					{background:#dcecfa;}
+.css_tab_labellist_component .css_disabled						{background:#eeeeee; color:#a0a0a0; cursor:default; padding:2px 0;}
+.css_tab_labellist_component .css_selected						{background:#dcecfa; border-bottom:#dcecfa solid 1px;}
+
+.css_tab_labellist_component .css_item_element					{padding:2px 10px;}
+
+.css_tab_labellist_component .css_item_value					{}
+
+/*INTERACTIONS*/
+.css_tab_labellist_component .css_item a						{color:black; text-decoration:none;}
+.css_tab_labellist_component .css_item a:hover					{}
+
+.css_tab_labellist_component .css_item.css_enabled a			{color:#444444;}
+.css_tab_labellist_component .css_item.css_selected a			{}

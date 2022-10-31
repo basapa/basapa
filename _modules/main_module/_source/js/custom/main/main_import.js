@@ -1,0 +1,13 @@
+document.write('<script src="/_source/js/custom/main/modules/infos/JSCMInfo.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/forms/JSCMRegistrationForm.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/forms/JSCMLogoutForm.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/pages/JSCMRegistrationPage.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/pages/JSCMPages.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/infos/JSCMInfos.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/forms/JSCMLoginForm.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/dialogs/JSCMDialogs.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/dialogs/JSCMDialog.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/JSCMModules.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/forms/JSCMForms.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/forms/JSCMForm.js" type="text/javascript"></script>');
+document.write('<script src="/_source/js/custom/main/modules/forms/JSCMAuthorizationForm.js" type="text/javascript"></script>');

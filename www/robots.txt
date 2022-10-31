@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Sitemap: http://basapa.ru/sitemaps.xml
+Host: basapa.ru

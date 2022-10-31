@@ -1,0 +1,137 @@
+<?php
+
+
+namespace basapa_ns;
+
+
+final class CCompositeComponentBase
+{
+	private $_fParams_arr;
+	
+	
+	public function __construct()
+	{
+		$this->__init();
+	}
+
+
+	/***************************************************
+	 * INTERFACE
+	 */
+
+
+	public function draw($aParams_arr)
+	{
+		$this->_fParams_arr = $aParams_arr;
+		
+		$this->__draw();
+	}
+
+
+	/*
+	 * INTERFACE
+	 ***************************************************/
+
+
+	protected function __init()
+	{
+	}
+	
+	
+	protected function __draw()
+	{
+	}
+	
+	
+	protected function __getComponents()
+	{
+		return $this->_fParams_arr[CComponentParam::COMPOSITE_COMPONENTS];
+	}
+
+
+	protected function __getComponentsStyle()
+	{
+		return isset($this->_fParams_arr[CComponentParam::COMPOSITE_STYLE]) ? $this->_fParams_arr[CComponentParam::COMPOSITE_STYLE] : CFieldValueConst::COMMON_EMPTY;
+	}
+
+
+	protected function __getComponentId($aComponent_arr)
+	{
+		return $aComponent_arr[CComponentParam::COMPONENT_PARAM_ID];
+	}
+	
+	
+	protected function __getComponentName($aComponent_arr)
+	{
+		return isset($aComponent_arr[CComponentParam::COMPONENT_PARAM_NAME]) ? $aComponent_arr[CComponentParam::COMPONENT_PARAM_NAME] : CFieldValueConst::COMMON_EMPTY;
+	}
+	
+	
+	protected function __getComponentNamePre($aComponent_arr)
+	{
+		return isset($aComponent_arr[CComponentParam::COMPONENT_PARAM_NAME_PRE]) ? $aComponent_arr[CComponentParam::COMPONENT_PARAM_NAME_PRE] : CFieldValueConst::COMMON_EMPTY;
+	}
+	
+	
+	protected function __getComponentNamePost($aComponent_arr)
+	{
+		return isset($aComponent_arr[CComponentParam::COMPONENT_PARAM_NAME_POST]) ? $aComponent_arr[CComponentParam::COMPONENT_PARAM_NAME_POST] : CFieldValueConst::COMMON_EMPTY;
+	}
+	
+	
+	protected function __getComponentRequired($aComponent_arr)
+	{
+		return $aComponent_arr[CComponentParam::COMPONENT_PARAM_REQUIRED];
+	}
+	
+	
+	protected function __getComponentTransmit($aComponent_arr)
+	{
+		return $aComponent_arr[CComponentParam::COMPONENT_PARAM_TRANSMIT];
+	}
+	
+	
+	protected function __getComponentValue($aComponent_arr)
+	{
+		return $aComponent_arr[CComponentParam::COMPONENT_PARAM_VALUE];
+	}
+	
+	
+	protected function __getComponentRequiredFilled($aComponent_arr)
+	{
+		return $aComponent_arr[CComponentParam::COMPONENT_PARAM_REQUIRED_FILLED];
+	}
+	
+	
+	protected function __getComponentNumChars($aComponent_arr)
+	{
+		return isset($aComponent_arr[CComponentParam::COMPONENT_PARAM_NUM_CHARS]) ? $aComponent_arr[CComponentParam::COMPONENT_PARAM_NUM_CHARS] : 0;
+	}
+	
+	
+	protected function __getComponentPlaceholder($aComponent_arr)
+	{
+		return isset($aComponent_arr[CComponentParam::COMPONENT_PARAM_PLACEHOLDER]) ? $aComponent_arr[CComponentParam::COMPONENT_PARAM_PLACEHOLDER] : CFieldValueConst::COMMON_EMPTY;
+	}
+	
+	
+	protected function __getComponentElements($aComponent_arr)
+	{
+		return $aComponent_arr[CComponentParam::COMPONENT_PARAM_ELEMENTS];
+	}
+	
+	
+	protected function __getComponentJsChange($aComponent_arr)
+	{
+		return isset($aComponent_arr[CComponentParam::COMPONENT_PARAM_JS_CHANGE]) ? $aComponent_arr[CComponentParam::COMPONENT_PARAM_JS_CHANGE] : CFieldValueConst::COMMON_EMPTY;
+	}
+	
+	
+	protected function __getSeparator($aValue_str)
+	{
+		return empty($aValue_str) ? ': ' : ', ';
+	}
+}
+
+
+?>

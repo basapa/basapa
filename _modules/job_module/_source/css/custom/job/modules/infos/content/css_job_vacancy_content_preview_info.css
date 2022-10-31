@@ -1,0 +1,35 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_vacancy_content_preview_info											{display:block; margin:4px; padding:4px; background:#ffffff; border:#dddddd solid 1px;}
+.css_job_vacancy_content_preview_info .css_header								{background:none; padding:0;}
+.css_job_vacancy_content_preview_info .css_body									{display:block; margin:0;}
+.css_job_vacancy_content_preview_info .css_footer								{padding:0; border-top:#dddddd solid 1px;}
+
+/*COMPONENTS*/
+.css_job_vacancy_content_preview_info .css_text_component_caption					{font-size:20px;}
+.css_job_vacancy_content_preview_info .css_text_component_element_caption			{background:none; padding:2px; margin:4px 0 4px 10px;}
+.css_job_vacancy_content_preview_info .css_text_component_caption a					{color:#0b71d9; text-decoration:none;}
+.css_job_vacancy_content_preview_info .css_text_component_caption a:hover			{text-decoration:underline;}
+
+.css_job_vacancy_content_preview_info .css_text_component_wage						{font-size:18px;}
+.css_job_vacancy_content_preview_info .css_text_component_element_wage				{background:none; color:#222222; padding:2px; margin:4px 0 4px 10px; font-weight:bold;}
+
+.css_job_vacancy_content_preview_info .css_text_component_description				{font-size: 16px;}
+.css_job_vacancy_content_preview_info .css_text_component_element_description		{background:none; padding:2px; margin:4px 0 4px 10px;}
+
+.css_job_vacancy_content_preview_info .css_text_component_employer					{}
+.css_job_vacancy_content_preview_info .css_text_component_element_employer			{background:none; padding:2px; margin:4px 0 4px 10px;}
+
+.css_job_vacancy_content_preview_info .css_image_component_employer_logo			{background:none; display:inline-block; float:right;}
+.css_job_vacancy_content_preview_info .css_image_component_element_employer_logo	{background:none; padding:2px; margin:4px 0;}
+
+.css_job_vacancy_content_preview_info .css_image_component_employer_city				{font-size: 16px;}
+.css_job_vacancy_content_preview_info .css_image_component_element_employer_city		{background:none; padding:2px; margin:4px 0 4px 10px;}
+.css_job_vacancy_content_preview_info .css_image_component_employer_city .css_post_name	{padding:6px;}
+
+.css_job_vacancy_content_preview_info .css_image_component_addition_time				{font-size: 16px;}
+.css_job_vacancy_content_preview_info .css_image_component_element_addition_time		{background:none; padding:2px; margin:4px 0 4px 10px;}
+.css_job_vacancy_content_preview_info .css_image_component_addition_time .css_post_name	{padding:6px;}

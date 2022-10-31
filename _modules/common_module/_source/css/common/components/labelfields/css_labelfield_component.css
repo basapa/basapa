@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:1
+*/
+
+/*COMMON*/
+.css_labelfield_component							{text-align:left;}
+.css_labelfield_component .css_element				{border:#a5c1dd solid 1px; width:200px;}
+.css_labelfield_component .css_caption				{margin-left:208px;}
+.css_labelfield_component .css_description			{margin-left:208px;}
+.css_labelfield_component .css_hint					{margin-left:208px;}
+.css_labelfield_component .css_name					{width:200px;}
+.css_labelfield_component .css_pre_name				{}
+.css_labelfield_component .css_post_name			{}
+
+/*INTERACTIONS*/
+.css_labelfield_component a							{}
+.css_labelfield_component a:hover					{}

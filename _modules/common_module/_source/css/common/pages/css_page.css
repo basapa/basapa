@@ -1,0 +1,20 @@
+/*
+IMPORT_PRIORITY:10
+*/
+.css_page									{background:white; color:black;}
+
+.css_page_header							{/*display:-webkit-flex; display:flex;*/}
+.css_page_body								{/*display:-webkit-flex; display:flex;*/ margin:0 auto; max-width:1024px; width:100%;}
+.css_page_footer							{/*display:-webkit-flex; display:flex;*/}
+
+/*SECTIONS*/
+.css_page_section							{}
+.css_page_header_section					{background:#5a7fa0; border:#2b587a solid 1px; /*height:80px;*/ text-align:center;}
+.css_page_left_section						{background:white; border:#dedede solid 1px; float:left; width:230px;}
+.css_page_right_section						{background:white; border:#dedede solid 1px; float:right; width:130px;}
+.css_page_pre_content_section				{background:#5a7fa0; border:#2b587a solid 1px; margin:1px 0;}
+.css_page_content_section					{background:white; border:#dedede solid 1px; margin:0 134px 0 234px; width:auto;}
+.css_page_post_content_section				{background:#5a7fa0; border:#2b587a solid 1px; margin:1px 0; clear:both;}
+.css_page_footer_section					{text-align:center; clear:both;}
+.css_page_float_left_section				{background:white; border:#dedede solid 1px; width:180px;}
+.css_page_float_right_section				{background:white; border:#dedede solid 1px; width:180px;}

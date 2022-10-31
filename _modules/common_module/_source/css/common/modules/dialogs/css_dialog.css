@@ -1,0 +1,12 @@
+/*
+IMPORT_PRIORITY:10
+*/
+
+/*COMMON*/
+.css_dialog											{margin:2px; text-align:center;}
+.css_dialog .css_header								{}
+.css_dialog .css_body								{margin:2px;}
+.css_dialog .css_footer								{margin:2px;}
+
+/*COMPONENTS*/
+/*.css_dialog .css_hidden_textfield_component		{padding:0;}*/

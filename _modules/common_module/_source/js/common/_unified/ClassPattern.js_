@@ -1,0 +1,85 @@
+/*remove...
+<NS>
+<CLASS_NAME>
+<BASE_NS>
+<BASE_CLASS_NAME>
+...remove*/
+/*CLASS PATTERN VERSION: 1.1*/
+bsp.i_getNamespace('bsp.<NS>').i_import<CLASS_NAME>Class = function()
+{
+	var _ns = bsp.<NS>;
+	if (_ns.<CLASS_NAME>)
+	{
+		return _ns.<CLASS_NAME>;
+	}
+
+	//INHERITANCE IMPORT...
+	var <BASE_CLASS_NAME> = bsp.<BASE_NS>.i_import<BASE_CLASS_NAME>Class();
+	//...INHERITANCE IMPORT
+
+	_ns.<CLASS_NAME> = function()
+	{
+		____constructor.apply(this, arguments);
+	};
+	var _self = _ns.<CLASS_NAME>;
+	bsp.i_setExtends(_self, <BASE_CLASS_NAME>);
+
+	var _prototype = _self.prototype;
+	var _superclass = _self.superclass;
+
+	var ____constructor;
+	____constructor = function()
+	{
+		_superclass.constructor.call(this);
+		this._init<CLASS_NAME>();
+	};
+	
+	var _static_public_const = _self;
+	var _static_private_const = _self;
+	var _static_public = _self;
+	var _static_private = _self;
+	var _public = _prototype;
+	var _protected = _prototype;
+	var _private = _prototype;
+	var _internal = _prototype;
+	var _virtual_public = _prototype;
+	var _override_public = _prototype;
+	var _virtual_protected = _prototype;
+	var _override_protected = _prototype;
+
+	//IMPORTS...
+	//...IMPORTS
+
+	//CONST PUBLIC...
+	//...CONST PUBLIC
+	
+	//CONST PRIVATE...
+	//...CONST PRIVATE
+
+	//STATIC PUBLIC...
+	//...STATIC PUBLIC
+	
+	//STATIC PRIVATE...
+	//...STATIC PRIVATE
+
+	//VARS...
+	//...VARS
+
+	_private._init<CLASS_NAME> = function()
+	{
+	};
+
+	//PUBLIC...
+	//...PUBLIC
+
+	//PROTECTED...
+	//...PROTECTED
+
+	//PRIVATE...
+	//...PRIVATE
+	
+	//INTERNAL...
+	//...INTERNAL
+
+	return _ns.<CLASS_NAME>;
+};

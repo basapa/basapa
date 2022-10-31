@@ -1,0 +1,25 @@
+<patterns>
+
+	<replace value="^JSC[A-Z]{1,4}[a-z].*" comment="common classes"/>
+	<replace value="^JS[A-Z]{1,4}[a-z].*" comment="main classes"/>
+	<replace value="^JSJOB[A-Z]{1,4}[a-z].*" comment="job custom classes"/>
+	
+	<replace value="^[a-z].*_ns" comment="namespaces"/>
+	<replace value="^i_import.*Class.*" comment="classes import"/>
+	
+	<replace value="^i_[A-Z].*" comment="public constants"/>
+	<replace value="^_[A-Z].*" comment="private constants"/>
+	<replace value="^__[A-Z].*" comment="protected constants"/>
+	<replace value="^___[A-Z].*" comment="internal constants"/>
+	
+	<replace value="^i_[a-z].*" comment="public methods/members"/>
+	<replace value="^_[a-z].*" comment="private methods/members"/>
+	<replace value="^__[a-z].*" comment="protected methods/members"/>
+	<replace value="^___[a-z].*" comment="internal methods/members"/>
+	
+	<replace value="^l[A-Z_].*" comment="local members"/>
+	<replace value="^a[A-Z_].*" comment="argument members"/>
+
+	<!--non_replace value="^__construct$" comment=""/-->
+	
+</patterns>

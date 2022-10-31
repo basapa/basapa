@@ -1,0 +1,71 @@
+<?php
+
+
+namespace basapa_ns;
+
+
+final class CEnterMinMaxAgeCompositeComponent extends CCompositeComponentBase
+{
+	const TEXTFIELD_COMPONENT_AGE_MIN					= 0;
+	const TEXTFIELD_COMPONENT_AGE_MAX					= 1;
+	
+	
+	/***************************************************
+	 * INTERFACE
+	 */
+	
+	/*
+	 * INTERFACE
+	 ***************************************************/
+	 
+	
+	protected function __draw()
+	{
+		$lComponents_arr = $this->__getComponents();
+		$lAgeMinComponent_obj = $lComponents_arr[CEnterMinMaxAgeCompositeComponent::TEXTFIELD_COMPONENT_AGE_MIN];
+		$lAgeMaxComponent_obj = $lComponents_arr[CEnterMinMaxAgeCompositeComponent::TEXTFIELD_COMPONENT_AGE_MAX];
+
+		$lFilled_str = CFieldValueConst::COMMON_EMPTY;
+
+		$lIsAgeMinFilled_bl = $this->__getComponentRequiredFilled($lAgeMinComponent_obj);
+		$lIsAgeMaxFilled_bl = $this->__getComponentRequiredFilled($lAgeMaxComponent_obj);
+
+		if ($lIsAgeMinFilled_bl && $lIsAgeMaxFilled_bl)
+		{
+			$lFilled_str = CFieldValueConst::COMMON_REQUIRED_FILLED;
+		}
+
+		//age min
+		$lParams_arr	= array(CComponentParam::TEXTFIELD_ID 					=> $this->__getComponentId($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_TRANSMIT 			=> $this->__getComponentTransmit($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_REQUIRED 			=> $this->__getComponentRequired($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_NAME 				=> $this->__getComponentName($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_NAME_PRE_FIELD 		=> $this->__getComponentNamePre($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_VALUE 				=> $this->__getComponentValue($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_REQUIRED_FILLED 		=> false,
+								CComponentParam::TEXTFIELD_NUM_CHARS 			=> $this->__getComponentNumChars($lAgeMinComponent_obj),
+								CComponentParam::TEXTFIELD_TYPE 				=> CTextField::TYPE_TEXT,
+								CComponentParam::TEXTFIELD_STYLE				=> 'display:inline-block;',
+								CComponentParam::TEXTFIELD_STYLE_COMPONENT 		=> 'width:30px;',
+								CComponentParam::TEXTFIELD_JS_FOCUS				=> 'jsHideFilledTF(\'' .$this->__getComponentId($lAgeMaxComponent_obj). '\');');
+		CComponentsView::getInstance()->getTextfield()->draw($lParams_arr);
+		
+		//age max
+		$lParams_arr	= array(CComponentParam::TEXTFIELD_ID 						=> $this->__getComponentId($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_TRANSMIT 				=> $this->__getComponentTransmit($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_REQUIRED 				=> $this->__getComponentRequired($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_NAME_PRE_FIELD 			=> $this->__getComponentNamePre($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_NAME_POST_FIELD 			=> $this->__getComponentNamePost($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_VALUE 					=> $this->__getComponentValue($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_REQUIRED_FILLED			=> !empty($lFilled_str),
+								CComponentParam::TEXTFIELD_REQUIRED_FILLED_MESSAGE	=> $lFilled_str,
+								CComponentParam::TEXTFIELD_NUM_CHARS 				=> $this->__getComponentNumChars($lAgeMaxComponent_obj),
+								CComponentParam::TEXTFIELD_TYPE 					=> CTextField::TYPE_TEXT,
+								CComponentParam::TEXTFIELD_STYLE					=> 'display:inline-block;',
+								CComponentParam::TEXTFIELD_STYLE_COMPONENT 			=> 'width:30px;');
+		CComponentsView::getInstance()->getTextfield()->draw($lParams_arr);
+	}
+}
+
+
+?>

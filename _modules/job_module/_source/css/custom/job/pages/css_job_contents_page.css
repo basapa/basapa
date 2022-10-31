@@ -1,0 +1,19 @@
+/*
+IMPORT_PRIORITY:0
+*/
+.css_job_contents_page										{background-color:#f7fbff;}
+
+/*SECTIONS*/
+.css_job_contents_page .css_page_section					{background:none; border:none;}
+.css_job_contents_page .css_header_section					{}
+.css_job_contents_page .css_page_left_section				{/*flex-shrink:0;*/}
+.css_job_contents_page .css_page_right_section				{}
+.css_job_contents_page .css_page_pre_content_section		{}
+.css_job_contents_page .css_page_content_section			{margin:0 0 0 234px; /*width:auto; margin:0; flex-grow:1;*/}
+.css_job_contents_page .css_page_post_content_section		{}
+.css_job_contents_page .css_page_footer_section				{}
+.css_job_contents_page .css_page_float_left_section			{}
+.css_job_contents_page .css_page_float_right_section		{}
+
+/*FORMS*/
+.css_job_contents_page .css_job_vacancy_content_quick_search_form		{margin:0 auto;}

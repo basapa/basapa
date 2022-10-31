@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_time_range_composite_component									{}
+
+/*COMPONENTS*/
+.css_time_range_composite_component .css_listbox_component_time_from					{display:inline-block;}
+.css_time_range_composite_component .css_listbox_component_element_time_from			{width:80px;}
+
+.css_time_range_composite_component .css_listbox_component_time_from .css_name			{width:70px;}
+
+.css_time_range_composite_component .css_listbox_component_time_to						{display:inline-block;}
+.css_time_range_composite_component .css_listbox_component_element_time_to				{width:80px;}
+
+.css_time_range_composite_component .css_listbox_component_time_to .css_name			{width:70px;}

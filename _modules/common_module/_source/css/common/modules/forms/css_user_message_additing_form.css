@@ -1,0 +1,26 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_user_message_additing_form											{background:#222222; margin:0;}
+.css_user_message_additing_form .css_header								{}
+.css_user_message_additing_form .css_body								{}
+.css_user_message_additing_form .css_footer								{}
+
+/*COMPONENTS*/
+.css_user_message_additing_form .css_text_component_form_name						{}
+.css_user_message_additing_form .css_text_component_element_form_name				{color:#eeeeee; font-size:14px; font-weight:bold;}
+
+.css_user_message_additing_form .css_textfield_component_user_name					{}
+.css_user_message_additing_form .css_textfield_component_element_user_name			{width:300px; font-weight:bold;}
+.css_user_message_additing_form .css_textfield_component_user_name .css_element		{border:#c1c1c1 solid 1px;}
+.css_user_message_additing_form .css_textfield_component_user_name .css_name		{color:#999999;}
+
+.css_user_message_additing_form .css_textarea_component_message						{}
+.css_user_message_additing_form .css_textarea_component_element_message				{width:300px; font-weight:bold;}
+.css_user_message_additing_form .css_textarea_component_message .css_element		{border:#c1c1c1 solid 1px;}
+.css_user_message_additing_form .css_textarea_component_message .css_name			{color:#999999;}
+
+.css_user_message_additing_form .css_text_component_about_mandatory_fields_note				{display:inline-block; float:right; text-align:right;}
+.css_user_message_additing_form .css_text_component_element_about_mandatory_fields_note		{color:#999999; font-size:12px;}

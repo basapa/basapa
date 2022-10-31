@@ -1,0 +1,23 @@
+/*
+IMPORT_PRIORITY:0
+*/
+.css_job_main_page										{}
+.css_job_main_page .css_page_body						{height:700px;}
+
+/*SECTIONS*/
+.css_job_main_page .css_page_section					{background:none; border:none;}
+.css_job_main_page .css_header_section					{}
+.css_job_main_page .css_page_left_section				{}
+.css_job_main_page .css_page_right_section				{}
+.css_job_main_page .css_page_pre_content_section		{margin: 6px 0; text-align:center;}
+.css_job_main_page .css_page_content_section			{margin:0; /*width:1000px; margin:0 auto; padding:300px 0;*/}
+.css_job_main_page .css_page_post_content_section		{}
+.css_job_main_page .css_page_footer_section				{}
+.css_job_main_page .css_page_float_left_section			{}
+.css_job_main_page .css_page_float_right_section		{}
+
+/*FORMS*/
+.css_job_main_page .css_job_vacancy_content_quick_search_form		{display:block; border:none; text-align:center;}
+
+/*INFOS*/
+.css_job_main_page .css_site_caption_info				{display:block;}

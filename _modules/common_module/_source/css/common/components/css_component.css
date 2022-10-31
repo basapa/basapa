@@ -1,0 +1,29 @@
+/*
+IMPORT_PRIORITY:10
+*/
+
+/*COMMON*/
+.css_component											{display:block; font-size:14px; text-align:left;}
+.css_component .css_container							{position:relative;}
+.css_component .css_element								{display:inline-block; background:#eeeeff; color:#3a3a3a; padding:4px; margin:4px;}
+.css_component .css_caption								{display:block; color:#194261; padding:4px 6px;}
+.css_component .css_description							{display:block; color:#194261; padding:4px 6px;}
+.css_component .css_hint								{display:none; color:#444444; background:#ebf3fa; border:#a5c1dd solid 1px; padding:6px; position:relative; top:10px; left:10px; opacity:0.8; filter:alpha(opacity=80); z-index:2; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+
+/*INTERACTIONS*/
+.css_component a										{text-decoration:underline;}
+.css_component a:hover									{text-decoration:none;}
+.css_component:hover .css_hint							{display:inline-block;}
+
+/*JOINTS*/
+.css_element_blocking 									{background:none; display:none; width:100%; height:100%; position:absolute; top:0; left:0;}
+.css_element_blocking_indicator							{background:url(/resources/internals/images/common/components/_joints/blocking_indicators/rect/_white.gif) no-repeat center center;}
+.css_hint_pointer										{background:url(/resources/internals/images/common/components/_joints/hints/triangle/_blue.gif) left top no-repeat; position:absolute; left:-10px; top:4px; width:10px; height:19px;}
+.css_element_loading 									{background:none; display:none; width:100%; height:100%; position:absolute; top:0; left:0;}
+.css_element_loading_indicator							{background:url(/resources/internals/images/common/components/_joints/loading_indicators/rect/_white.gif) no-repeat center center;}
+
+/*NATIVE*/
+/*placeholder*/
+::-webkit-input-placeholder								{color:#333333;}
+::-moz-placeholder										{color:#333333;}
+:-ms-input-placeholder									{color:#333333;}

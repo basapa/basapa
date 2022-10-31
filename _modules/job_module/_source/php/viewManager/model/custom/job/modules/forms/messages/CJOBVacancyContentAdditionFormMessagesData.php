@@ -1,0 +1,50 @@
+<?php
+declare(strict_types=1);
+/*
+IMPORT_PRIORITY:8
+*/
+namespace basapa_ns;
+
+
+final class CJOBVacancyContentAdditionFormMessagesData extends CCFormMessagesData
+{
+	public const i_FORM_MESSAGE_ID_CAPTION_EMPTY_DATA			= self::__FORM_MESSAGES_COUNT;
+	public const i_FORM_MESSAGE_ID_CAPTION_ILLEGAL_CHARS		= self::__FORM_MESSAGES_COUNT + 1;
+	public const i_FORM_MESSAGE_ID_CAPTION_WRONG_CHARS_COUNT	= self::__FORM_MESSAGES_COUNT + 2;
+
+	public const i_FORM_MESSAGE_ID_WAGE_FROM_EMPTY_DATA			= self::__FORM_MESSAGES_COUNT + 3;
+	public const i_FORM_MESSAGE_ID_WAGE_FROM_ILLEGAL_CHARS		= self::__FORM_MESSAGES_COUNT + 4;
+	public const i_FORM_MESSAGE_ID_WAGE_FROM_WRONG_CHARS_COUNT	= self::__FORM_MESSAGES_COUNT + 5;
+
+	public const i_FORM_MESSAGE_ID_WAGE_TO_EMPTY_DATA			= self::__FORM_MESSAGES_COUNT + 6;
+	public const i_FORM_MESSAGE_ID_WAGE_TO_ILLEGAL_CHARS		= self::__FORM_MESSAGES_COUNT + 7;
+	public const i_FORM_MESSAGE_ID_WAGE_TO_WRONG_CHARS_COUNT	= self::__FORM_MESSAGES_COUNT + 8;
+
+	public const i_FORM_MESSAGE_ID_WAGE_CURRENCY_EMPTY_DATA		= self::__FORM_MESSAGES_COUNT + 9;
+
+	public const i_FORM_MESSAGE_ID_DESCRIPTION_EMPTY_DATA			= self::__FORM_MESSAGES_COUNT + 10;
+	public const i_FORM_MESSAGE_ID_DESCRIPTION_ILLEGAL_CHARS		= self::__FORM_MESSAGES_COUNT + 11;
+	public const i_FORM_MESSAGE_ID_DESCRIPTION_WRONG_CHARS_COUNT	= self::__FORM_MESSAGES_COUNT + 12;
+
+	public const i_FORM_MESSAGE_ID_EMPLOYER_EMPTY_DATA			= self::__FORM_MESSAGES_COUNT + 13;
+	public const i_FORM_MESSAGE_ID_EMPLOYER_ILLEGAL_CHARS		= self::__FORM_MESSAGES_COUNT + 14;
+	public const i_FORM_MESSAGE_ID_EMPLOYER_WRONG_CHARS_COUNT	= self::__FORM_MESSAGES_COUNT + 15;
+
+	public const i_FORM_MESSAGE_ID_EMPLOYER_CITY_EMPTY_DATA		= self::__FORM_MESSAGES_COUNT + 16;
+
+	public const i_FORM_MESSAGE_ID_EXTERNAL_SOURCE_EMPTY_DATA			= self::__FORM_MESSAGES_COUNT + 17;
+	public const i_FORM_MESSAGE_ID_EXTERNAL_SOURCE_ILLEGAL_CHARS		= self::__FORM_MESSAGES_COUNT + 18;
+	public const i_FORM_MESSAGE_ID_EXTERNAL_SOURCE_WRONG_CHARS_COUNT	= self::__FORM_MESSAGES_COUNT + 19;
+
+
+	/***************************************************
+	 * INTERFACE
+	 */
+
+	/*
+	 * INTERFACE
+	 ***************************************************/
+}
+
+
+?>

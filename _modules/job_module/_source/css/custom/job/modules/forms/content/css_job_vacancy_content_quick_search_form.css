@@ -1,0 +1,21 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_vacancy_content_quick_search_form					{display:inline-block; margin:4px; padding:4px; background:#ffffff; color:black; border:#dddddd solid 1px;}
+.css_job_vacancy_content_quick_search_form .css_header		{background:none; padding:0;}
+.css_job_vacancy_content_quick_search_form .css_body		{}
+.css_job_vacancy_content_quick_search_form .css_footer		{}
+
+/*COMPONENTS*/
+.css_job_vacancy_content_quick_search_form .css_textfield_component_search_text					{display:inline-block;}
+.css_job_vacancy_content_quick_search_form .css_textfield_component_element_search_text			{}
+.css_job_vacancy_content_quick_search_form .css_textfield_component_search_text .css_element	{background:none; margin:4px 0 4px 0; width:250px;}
+
+.css_job_vacancy_content_quick_search_form .css_select_city_composite_component_01			{display:inline-block;}
+.css_job_vacancy_content_quick_search_form .css_select_city_composite_component_element_01	{}
+
+.css_job_vacancy_content_quick_search_form .css_button_component_submit						{display:inline-block;}
+.css_job_vacancy_content_quick_search_form .css_button_component_element_submit				{padding:2px; margin:4px;}
+.css_job_vacancy_content_quick_search_form .css_button_component_element_submit .css_name	{background:none;}

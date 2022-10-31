@@ -1,0 +1,52 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_contents_administration_form							{display:inline-block; margin:4px; padding:4px; background:#ffffff; color:black; border:#dddddd solid 1px;}
+.css_job_contents_administration_form .css_header				{background:none; padding:0;}
+.css_job_contents_administration_form .css_body					{}
+.css_job_contents_administration_form .css_footer				{}
+
+/*COMPONENTS*/
+.css_job_contents_administration_form .css_text_component_form_name				{}
+.css_job_contents_administration_form .css_text_component_element_form_name		{color:#0b71d9; font-size:16px; font-weight:bold;}
+
+/*table...*/
+.css_job_contents_administration_form .css_table_component_contents					{}
+.css_job_contents_administration_form .css_table_component_element_contents			{}
+.css_job_contents_administration_form .css_table_component_contents .css_element	{background:none; margin:4px 0 4px 0;}
+
+.css_job_contents_administration_form .css_table_component_contents a				{color:black;}
+
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_id_caption						{width:60px; text-align:center;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_element_content_id_caption				{}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_tabs_item_state_caption					{width:100px; text-align:center;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_element_content_state_caption			{}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_tabs_item_addition_time_caption			{width:100px; text-align:center;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_element_content_addition_time_caption	{}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_tabs_item_updating_time_caption			{width:100px; text-align:center;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_element_content_updating_time_caption	{}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_tabs_item_expiring_time_caption			{width:100px; text-align:center;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_element_content_expiring_time_caption	{}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_tabs_item_description_caption			{text-align:center;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_element_content_description_caption		{text-align:center;}
+
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_id				{display:inline-block; width:60px; text-align:right; vertical-align:top;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_state			{display:inline-block; width:100px; text-align:center; vertical-align:top;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_addition_time	{display:inline-block; width:100px; text-align:center; vertical-align:top;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_updating_time	{display:inline-block; width:100px; text-align:center; vertical-align:top;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_expiring_time	{display:inline-block; width:100px; text-align:center; vertical-align:top;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_description		{display:inline-block; text-align:left; vertical-align:top;}
+.css_job_contents_administration_form .css_table_component_contents .css_listbox_component_actions				{display:inline-block; text-align:center; vertical-align:top;}
+
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_state .css_moderation_waiting	{background:#fffac8; border:#eeeab0 solid 1px; color:#d9d25b;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_state .css_activated			{background:#e8ffc8; border:#cdeeb0 solid 1px; color:#a5d95b;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_state .css_deactivated			{background:#ededed; border:#d6d6d6 solid 1px; color:#888888;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_state .css_blocked				{background:#ededed; border:#d6d6d6 solid 1px; color:#888888;}
+.css_job_contents_administration_form .css_table_component_contents .css_text_component_content_state .css_deleted				{background:#fbe3e3; border:#f6c8c8 solid 1px; color:#e76d6d;}
+/*...table*/
+
+.css_job_contents_administration_form .css_button_component_submit						{display:inline-block;}
+.css_job_contents_administration_form .css_button_component_element_submit				{padding:2px; margin:4px;}
+.css_job_contents_administration_form .css_button_component_element_submit .css_name	{background:none;}

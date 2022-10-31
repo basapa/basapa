@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<sitemap>
+		<loc>http://basapa.ru/sitemaps/common/sitemap.xml</loc><lastmod>2022-11-31T18:00:00+07:00</lastmod>
+	</sitemap>
+
+	<!--sitemap>
+		<loc>http://sub.basapa.ru/sitemaps/custom/sub/sub_sitemap.xml</loc><lastmod>2022-10-31T18:00:00+07:00</lastmod>
+	</sitemap-->
+
+
+</sitemapindex>

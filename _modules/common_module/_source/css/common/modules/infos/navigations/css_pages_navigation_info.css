@@ -1,0 +1,23 @@
+/*
+IMPORT_PRIORITY:1
+*/
+
+/*COMMON*/
+.css_pages_navigation_info								{}
+.css_pages_navigation_info .css_header					{}
+.css_pages_navigation_info .css_body					{}
+.css_pages_navigation_info .css_footer					{}
+
+/*COMPONENTS*/
+.css_pages_navigation_info .css_labellist_component_01 .css_item					{border:#2b587a solid 1px; margin:0 2px;}
+.css_pages_navigation_info .css_labellist_component_01 .css_item_element			{padding:4px 10px;}
+
+.css_pages_navigation_info .css_labellist_component_01 .css_enabled					{background:#5a7fa0;}
+.css_pages_navigation_info .css_labellist_component_01 .css_enabled:hover			{background:#486e90;}
+.css_pages_navigation_info .css_labellist_component_01 .css_disabled				{background:#5a7fa0; color:#7d7d7d;}
+.css_pages_navigation_info .css_labellist_component_01 .css_selected				{background:#486e90;}
+
+/*INTERACTIONS*/
+.css_pages_navigation_info .css_labellist_component_01 .css_item.css_enabled a			{color:#eeeeee;}
+.css_pages_navigation_info .css_labellist_component_01 .css_item.css_enabled a:hover	{color:white;}
+.css_pages_navigation_info .css_labellist_component_01 .css_item.css_selected a			{color:white;}

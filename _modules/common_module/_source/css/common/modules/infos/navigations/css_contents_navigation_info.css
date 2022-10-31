@@ -1,0 +1,23 @@
+/*
+IMPORT_PRIORITY:1
+*/
+
+/*COMMON*/
+.css_contents_navigation_info								{padding:10px;}
+.css_contents_navigation_info .css_header					{}
+.css_contents_navigation_info .css_body						{}
+.css_contents_navigation_info .css_footer					{}
+
+/*COMPONENTS*/
+.css_contents_navigation_info .css_labellist_component_01 .css_element		{}
+.css_contents_navigation_info .css_labellist_component_01 .css_item			{border:none; margin:0 2px;}
+.css_contents_navigation_info .css_labellist_component_01 .css_item_element	{min-width:25px; text-align:center; padding:4px 6px;}
+.css_contents_navigation_info .css_labellist_component_01 .css_enabled		{background:none;}
+.css_contents_navigation_info .css_labellist_component_01 .css_enabled:hover	{background:#486e90;}
+.css_contents_navigation_info .css_labellist_component_01 .css_disabled		{background:none; color:#7d7d7d; padding:2px 0;}
+.css_contents_navigation_info .css_labellist_component_01 .css_selected		{background:#486e90; cursor:default; pointer-events:none;}
+
+/*INTERACTIONS*/
+.css_contents_navigation_info .css_labellist_component_01 .css_item.css_enabled a		{color:#5a7fa0;}
+.css_contents_navigation_info .css_labellist_component_01 .css_item.css_enabled a:hover	{color:white;}
+.css_contents_navigation_info .css_labellist_component_01 .css_item.css_selected a		{color:white;}

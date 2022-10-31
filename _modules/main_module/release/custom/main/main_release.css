@@ -1,0 +1,134 @@
+/*
+IMPORT_PRIORITY:5
+*/
+.css_m_page									{}
+
+/*SECTIONS*/
+.css_m_page_section							{}
+.css_m_page_header_section					{background:white; border:#dedede solid 1px; height:84px;}
+.css_m_page_left_section						{background:white; border:#dedede solid 1px; float:left; width:300px;}
+.css_m_page_right_section						{background:white; border:#dedede solid 1px; float:right; width:300px;}
+.css_m_page_pre_content_section				{background:#9f9f9f; border:#737373 solid 1px; margin:2px 0;}
+.css_m_page_content_section					{background:white; border:#dedede solid 1px; margin:0 300px 0 300px; width:auto;}
+.css_m_page_post_content_section				{background:#9f9f9f; border:#737373 solid 1px; clear:both;}
+.css_m_page_footer_section					{padding:1px; text-align:center;}
+.css_m_page_float_left_section				{background:white; border:#dedede solid 1px; width:300px;}
+.css_m_page_float_right_section				{background:white; border:#dedede solid 1px; width:300px;}/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_registration_form											{}
+.css_registration_form .css_header								{}
+.css_registration_form .css_body								{}
+.css_registration_form .css_footer								{}
+
+/*COMPONENTS*/
+.css_registration_form .css_textfield_component_login				{}
+.css_registration_form .css_textfield_component_login_element		{width:150px;}
+
+.css_registration_form .css_textfield_component_password				{}
+.css_registration_form .css_textfield_component_password_element		{width:150px;}
+
+.css_registration_form .css_textfield_component_repeat_password				{}
+.css_registration_form .css_textfield_component_repeat_password_element		{width:150px;}
+
+.css_registration_form .css_textfield_component_email				{}
+.css_registration_form .css_textfield_component_email_element		{width:150px;}
+
+.css_registration_form .css_button_component_submit				{display:inline-block;}
+.css_registration_form .css_button_component_submit_element		{}/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_m_dialog											{}
+.css_m_dialog .css_header								{}
+.css_m_dialog .css_body								{}
+.css_m_dialog .css_footer								{}
+
+/*COMPONENTS*//*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_logout_form											{float:right;}
+.css_logout_form .css_header								{}
+.css_logout_form .css_body									{padding:20px 0 0 0; text-align:right; background:none;}
+.css_logout_form .css_footer								{}
+
+/*COMPONENTS*/
+/*login*/
+.css_logout_form .css_text_component_01					{display:inline-block; width:100px;}
+.css_logout_form .css_text_component_01_element			{color:white; text-align:right;}
+
+/*password*/
+.css_logout_form .css_button_component_01						{display:inline-block; padding:0;}
+.css_logout_form .css_button_component_01_element				{}
+
+.css_logout_form .css_text_component_02					{display:inline-block;}
+.css_logout_form .css_text_component_02_element			{color:#a5c1dd; text-align:left;}
+
+.css_logout_form .css_text_component_03					{display:inline-block; padding-right:60px;}
+.css_logout_form .css_text_component_03_element			{color:#a5c1dd; text-align:left;}/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_authorization_form											{}
+.css_authorization_form .css_header								{}
+.css_authorization_form .css_body								{}
+.css_authorization_form .css_footer								{}
+
+/*COMPONENTS*/
+/*login*/
+.css_authorization_form .css_textfield_component_01				{}
+.css_authorization_form .css_textfield_component_01_element		{width:150px;}
+
+/*password*/
+.css_authorization_form .css_textfield_component_02				{}
+.css_authorization_form .css_textfield_component_02_element		{width:150px;}
+
+/*remember me*/
+.css_authorization_form .css_checkbox_component_01				{display:inline-block; padding:0 2px 0 212px;}
+.css_authorization_form .css_checkbox_component_01_element		{}
+
+/*submit*/
+.css_authorization_form .css_button_component_01				{display:inline-block;}
+.css_authorization_form .css_button_component_01_element		{}/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_login_form											{float:right;}
+.css_login_form .css_header								{}
+.css_login_form .css_body								{padding:0; background:none;}
+.css_login_form .css_footer								{}
+
+/*COMPONENTS*/
+/*login*/
+.css_login_form .css_textfield_component_01				{display:inline-block; padding:2px;}
+.css_login_form .css_textfield_component_01_element		{border:#2b587a solid 1px; width:100px;}
+.css_login_form .css_textfield_component_01 .css_caption	{color:white; margin-left:0;}
+
+/*password*/
+.css_login_form .css_textfield_component_02				{display:inline-block; padding:2px;}
+.css_login_form .css_textfield_component_02_element		{border:#2b587a solid 1px; width:100px;}
+.css_login_form .css_textfield_component_02 .css_caption	{color:white; margin-left:0;}
+
+/*submit*/
+.css_login_form .css_button_component_01				{display:inline-block; padding:0;}
+.css_login_form .css_button_component_01_element		{}
+
+/*remember me*/
+.css_login_form .css_checkbox_component_01				{display:inline-block; padding:0 2px;}
+.css_login_form .css_checkbox_component_01_element		{padding:0;}
+.css_login_form .css_checkbox_component_01 .css_post_name	{color:#a5c1dd; font-size: 11px; padding:0 0 0 2px;}
+
+/*recovery password*/
+.css_login_form .css_text_component_01					{float:right; width:150px; padding:0 8px 0 0;}
+.css_login_form .css_text_component_01_element			{color:#a5c1dd;}
+
+/*registration*/
+.css_login_form .css_text_component_02					{float:right; width:150px; padding:0 8px 0 0;}
+.css_login_form .css_text_component_02_element			{color:#a5c1dd;}

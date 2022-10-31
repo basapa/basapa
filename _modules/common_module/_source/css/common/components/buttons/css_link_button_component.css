@@ -1,0 +1,21 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_link_button_component										{}
+.css_link_button_component .css_element							{}
+.css_link_button_component .css_caption							{}
+.css_link_button_component .css_description						{}
+.css_link_button_component .css_hint							{background:#eeeeee; color:#444444; position:absolute; top:0;}
+.css_link_button_component .css_name							{}
+
+/*INTERACTIONS*/
+.css_link_button_component a									{}
+.css_link_button_component a:hover								{}
+
+/*CUSTOM*/
+.css_link_button_component .css_deleting_button					{color:red; cursor:pointer;}
+
+.css_link_button_component .css_deleting_button:hover			{color:red;}
+.css_link_button_component .css_deleting_button:active			{}

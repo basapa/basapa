@@ -1,0 +1,5 @@
+Доступ на сайт запрещен.
+<br>
+Возможные причины: Ваш аккаунт может быть забанен.
+<br><br>
+Служба тех. поддержки <a style="font-weight:bold;" href="mailto:#EMAIL#" rel="noindex">#EMAIL#</a>.

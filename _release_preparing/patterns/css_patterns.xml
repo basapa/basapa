@@ -1,0 +1,8 @@
+<patterns>
+	
+	<replace value="^css_[a-z].*" comment="common styles"/>
+	<replace value="^css_job_[a-z].*" comment="job custom styles"/>
+	
+	<!--non_replace value="^PATTERN$" comment=""/-->
+	
+</patterns>

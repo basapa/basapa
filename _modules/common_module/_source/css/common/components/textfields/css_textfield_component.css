@@ -1,0 +1,29 @@
+/*
+IMPORT_PRIORITY:7
+*/
+
+/*COMMON*/
+.css_textfield_component								{text-align:left;}
+.css_textfield_component .css_element					{border:#cccccc solid 1px; width:200px;}
+.css_textfield_component .css_caption					{margin-left:208px;}
+.css_textfield_component .css_description				{margin-left:208px;}
+.css_textfield_component .css_hint						{margin-left:208px;}
+.css_textfield_component .css_name						{width:200px;}
+.css_textfield_component .css_pre_name					{}
+.css_textfield_component .css_post_name					{}
+
+/*INTERACTIONS*/
+.css_textfield_component a								{}
+.css_textfield_component a:hover						{}
+
+.css_textfield_component .css_element:hover				{background:white; color:black;}
+.css_textfield_component .css_element:focus				{background:white; color:black;}
+
+.css_textfield_component label:hover .css_element		{background:white; color:black;}
+
+/*CUSTOM*/
+.css_textfield_component .css_locking_element			{display:none;}
+/*.css_textfield_component_base .css_disabled .css_locking_element	{display:block;}
+.css_textfield_component_base .css_disabled .css_element			{border:#565656 solid 1px; background:#dedede; color:#424242;}*/
+
+.css_textfield_component .css_element::placeholder		{color:#cccccc;}

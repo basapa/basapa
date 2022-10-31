@@ -1,0 +1,14 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_simple_table_component								{}
+.css_simple_table_component .css_element				{}
+.css_simple_table_component .css_caption				{}
+.css_simple_table_component .css_description			{}
+.css_simple_table_component .css_hint					{}
+
+/*INTERACTIONS*/
+.css_simple_table_component tr:nth-child(odd)			{background-color:#f0f0f0;}
+.css_simple_table_component tr:nth-child(even)			{background-color:#ffffff;}

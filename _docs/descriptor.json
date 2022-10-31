@@ -1,0 +1,15 @@
+{
+	"contents":
+	[
+		{
+			"site": "https://rabota.vtomske.ru/",
+			"contents":
+			[
+				{
+					"url": "https://rabota.vtomske.ru/vacancy?page=",
+					"initial_page_index": 1
+				}
+			]
+		}
+	]
+}

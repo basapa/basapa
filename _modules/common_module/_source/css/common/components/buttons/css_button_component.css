@@ -1,0 +1,30 @@
+/*
+IMPORT_PRIORITY:7
+*/
+
+/*COMMON*/
+.css_button_component									{text-align:left;}
+.css_button_component .css_element						{padding:4px 8px;}
+.css_button_component .css_caption						{}
+.css_button_component .css_description					{}
+.css_button_component .css_hint							{}
+.css_button_component .css_name							{text-align:center; color:white; padding:8px 6px; width:110px;}
+
+/*INTERACTIONS*/
+.css_button_component a									{display:block; text-decoration:none;}
+.css_button_component a:hover							{color:white;}
+
+.css_button_component .css_element:hover				{background-color:#0f84fb;}
+.css_button_component .css_element:focus				{background-color:#0f84fb;}
+.css_button_component .css_element:disabled				{background-color:#888888; cursor:default;}
+
+/*COLORS*/
+.css_button_component .css_blue							{background-color:#0b71d9; border:none; color:white;}
+.css_button_component .css_green						{background:url(/resources/internals/images/common/components/button/bg/_green_bg.gif) repeat-x 0 -10px; border:#5a7b2c solid 1px; color:#f1f7e8; text-shadow:0 1px 0 #4a6f18;}
+.css_button_component .css_red							{background:url(/resources/internals/images/common/components/button/bg/_red_bg.gif) repeat-x 0 -10px; border:#5a7b2c solid 1px; color:#ebf5db; text-shadow:0 1px 0 #4a6f18;}
+.css_button_component .css_gray							{background:url(/resources/internals/images/common/components/button/bg/_gray_bg.gif) repeat-x 0 -10px; border:#4f4f4f solid 1px; color:#f0f0f0; text-shadow:0 1px 0 #373737;}
+.css_button_component .css_yellow						{background:url(/resources/internals/images/common/components/button/bg/_yellow_bg.gif) repeat-x 0 -10px; border:#5a7b2c solid 1px; color:#ebf5db; text-shadow:0 1px 0 #4a6f18;}
+.css_button_component .css_purple						{background:url(/resources/internals/images/common/components/button/bg/_purple_bg.gif) repeat-x 0 -10px; border:#5a7b2c solid 1px; color:#ebf5db; text-shadow:0 1px 0 #4a6f18;}
+
+/*JOINTS*/
+.css_button_component .css_element_blocking_indicator	{background:url(/resources/internals/images/common/components/_joints/blocking_indicators/rect/_gray.gif) no-repeat center center;}

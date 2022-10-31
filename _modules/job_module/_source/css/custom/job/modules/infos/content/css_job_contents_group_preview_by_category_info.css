@@ -1,0 +1,16 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_job_contents_group_preview_by_category_info											{display:inline-block; padding:1px 2px;}
+.css_job_job_contents_group_preview_by_category_info .css_header								{}
+.css_job_job_contents_group_preview_by_category_info .css_body								{display:inline-block; padding:1px;}
+.cssjob_job_contents_group_preview_by_category_info .css_footer								{}
+
+/*COMPONENTS*/
+.css_job_job_contents_group_preview_by_category_info .css_text_component_category_name			{text-align:center;}
+.css_job_job_contents_group_preview_by_category_info .css_text_component_element_category_name	{}
+
+.css_job_job_contents_group_preview_by_category_info .css_image_component_job_image			{}
+.css_job_job_contents_group_preview_by_category_info .css_image_component_element_job_image	{}

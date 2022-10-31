@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_hidden_textfield_component								{display:none;}
+.css_hidden_textfield_component .css_element				{}
+.css_hidden_textfield_component .css_caption				{}
+.css_hidden_textfield_component .css_description			{}
+.css_hidden_textfield_component .css_hint					{}
+.css_hidden_textfield_component .css_name					{}
+.css_hidden_textfield_component .css_pre_name				{}
+.css_hidden_textfield_component .css_post_name				{}
+
+/*INTERACTIONS*/
+.css_hidden_textfield_component a							{}
+.css_hidden_textfield_component a:hover						{}

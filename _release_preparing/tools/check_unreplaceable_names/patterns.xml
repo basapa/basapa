@@ -1,0 +1,10 @@
+<patterns>
+	
+	<replace value="css_[a-z].*"		comment="common styles"/>
+	<replace value="css_job_[a-z].*"	comment="job custom styles"/>
+	
+	<replace value="JSC[A-Z][a-z].*"	comment="common classes"/>
+	<replace value="JS[A-Z][a-z].*"		comment="main classes"/>
+	<replace value="JSJOB[A-Z][a-z].*"	comment="job custom classes"/>
+	
+</patterns>

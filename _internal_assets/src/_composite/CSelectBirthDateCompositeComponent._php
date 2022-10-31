@@ -1,0 +1,91 @@
+<?php
+
+
+namespace basapa_ns;
+
+
+final class CSelectBirthDateCompositeComponent extends CCompositeComponentBase
+{
+	const LISTBOX_COMPONENT_DAY							= 0;
+	const LISTBOX_COMPONENT_MONTH						= 1;
+	const LISTBOX_COMPONENT_YEAR						= 2;
+	
+	
+	/***************************************************
+	 * INTERFACE
+	 */
+	
+	/*
+	 * INTERFACE
+	 ***************************************************/
+	 
+	
+	protected function __draw()
+	{
+		$lComponents_arr = $this->__getComponents();
+		$lDayComponent_obj = $lComponents_arr[CSelectBirthDateCompositeComponent::LISTBOX_COMPONENT_DAY];
+		$lMonthComponent_obj = $lComponents_arr[CSelectBirthDateCompositeComponent::LISTBOX_COMPONENT_MONTH];
+		$lYearComponent_obj = $lComponents_arr[CSelectBirthDateCompositeComponent::LISTBOX_COMPONENT_YEAR];
+
+		$lFilled_str = CFieldValueConst::COMMON_EMPTY;
+		$lLength_int = 0;
+
+		$lIsDayFilled_bl = $this->__getComponentRequiredFilled($lDayComponent_obj);
+		$lIsMonthFilled_bl = $this->__getComponentRequiredFilled($lMonthComponent_obj);
+		$lIsYearFilled_bl = $this->__getComponentRequiredFilled($lYearComponent_obj);
+
+		if ($lIsDayFilled_bl || $lIsMonthFilled_bl || $lIsYearFilled_bl)
+		{
+			$lFilled_str .= $lIsDayFilled_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lDayComponent_obj) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str .= $lIsMonthFilled_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lMonthComponent_obj) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str .= $lIsYearFilled_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lYearComponent_obj) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str = CFieldValueConst::COMMON_REQUIRED_SPECIFY . $lFilled_str;
+
+			$lLength_int = mb_strlen($lFilled_str, 'utf-8') * 6;
+		}
+
+		//day
+		$lParams_arr	= array(CComponentParam::LISTBOX_ID 				=> $this->__getComponentId($lDayComponent_obj),
+								CComponentParam::LISTBOX_TRANSMIT 			=> $this->__getComponentTransmit($lDayComponent_obj),
+								CComponentParam::LISTBOX_REQUIRED 			=> $this->__getComponentRequired($lDayComponent_obj),
+								CComponentParam::LISTBOX_NAME 				=> $this->__getComponentName($lDayComponent_obj),
+								CComponentParam::LISTBOX_PLACEHOLDER 		=> $this->__getComponentPlaceholder($lDayComponent_obj),
+								CComponentParam::LISTBOX_ELEMENTS 			=> $this->__getComponentElements($lDayComponent_obj),
+								CComponentParam::LISTBOX_VALUE				=> $this->__getComponentValue($lDayComponent_obj),
+								CComponentParam::LISTBOX_REQUIRED_FILLED	=> false,
+								CComponentParam::LISTBOX_STYLE				=> 'display:inline-block;',
+								CComponentParam::LISTBOX_STYLE_COMPONENT 	=> 'width:70px;',
+								CComponentParam::LISTBOX_JS_FOCUS			=> 'jsHideFilledLB(\'' .$this->__getComponentId($lYearComponent_obj). '\');');
+		CComponentsView::getInstance()->getListbox()->draw($lParams_arr);
+		
+		//month
+		$lParams_arr 	= array(CComponentParam::LISTBOX_ID 				=> $this->__getComponentId($lMonthComponent_obj),
+								CComponentParam::LISTBOX_TRANSMIT 			=> $this->__getComponentTransmit($lMonthComponent_obj),
+								CComponentParam::LISTBOX_REQUIRED 			=> $this->__getComponentRequired($lMonthComponent_obj),
+								CComponentParam::LISTBOX_PLACEHOLDER 		=> $this->__getComponentPlaceholder($lMonthComponent_obj),
+								CComponentParam::LISTBOX_ELEMENTS 			=> $this->__getComponentElements($lMonthComponent_obj),
+								CComponentParam::LISTBOX_VALUE				=> $this->__getComponentValue($lMonthComponent_obj),
+								CComponentParam::LISTBOX_REQUIRED_FILLED	=> false,
+								CComponentParam::LISTBOX_STYLE				=> 'display:inline-block;',
+								CComponentParam::LISTBOX_STYLE_COMPONENT 	=> 'width:100px;',
+								CComponentParam::LISTBOX_JS_FOCUS			=> 'jsHideFilledLB(\'' .$this->__getComponentId($lYearComponent_obj). '\');');
+		CComponentsView::getInstance()->getListbox()->draw($lParams_arr);
+		
+		//year
+		$lParams_arr 	= array(CComponentParam::LISTBOX_ID 						=> $this->__getComponentId($lYearComponent_obj),
+								CComponentParam::LISTBOX_TRANSMIT 					=> $this->__getComponentTransmit($lYearComponent_obj),
+								CComponentParam::LISTBOX_REQUIRED 					=> $this->__getComponentRequired($lYearComponent_obj),
+								CComponentParam::LISTBOX_PLACEHOLDER 				=> $this->__getComponentPlaceholder($lYearComponent_obj),
+								CComponentParam::LISTBOX_ELEMENTS 					=> $this->__getComponentElements($lYearComponent_obj),
+								CComponentParam::LISTBOX_VALUE						=> $this->__getComponentValue($lYearComponent_obj),
+								CComponentParam::LISTBOX_REQUIRED_FILLED			=> !empty($lFilled_str),
+								CComponentParam::LISTBOX_REQUIRED_FILLED_MESSAGE	=> $lFilled_str,
+								CComponentParam::LISTBOX_STYLE			 			=> 'display:inline-block;',
+								CComponentParam::LISTBOX_STYLE_COMPONENT 			=> 'width:70px;',
+								CComponentParam::LISTBOX_STYLE_FILLED				=> 'width:' .$lLength_int. 'px;');
+		CComponentsView::getInstance()->getListbox()->draw($lParams_arr);
+	}
+}
+
+
+?>

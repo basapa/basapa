@@ -1,0 +1,23 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_external_redirect_info											{display:block; margin:4px; padding:4px; background:#ffffff; color:black; border:#dddddd solid 1px;}
+.css_external_redirect_info .css_header								{background:none; padding:0;}
+.css_external_redirect_info .css_body								{}
+.css_external_redirect_info .css_footer								{text-align:center;}
+
+/*COMPONENTS*/
+.css_external_redirect_info .css_text_component_title				{text-align:center;}
+.css_external_redirect_info .css_text_component_element_title		{}
+
+.css_external_redirect_info .css_text_component_description			{text-align:center;}
+.css_external_redirect_info .css_text_component_element_description	{}
+
+.css_external_redirect_info .css_image_component_awaiting_indicator			{text-align:center;}
+.css_external_redirect_info .css_image_component_element_awaiting_indicator	{}
+
+.css_external_redirect_info .css_text_component_help				{text-align:center;}
+.css_external_redirect_info .css_text_component_element_help		{}
+.css_external_redirect_info .css_text_component_element_help a		{color:black;}

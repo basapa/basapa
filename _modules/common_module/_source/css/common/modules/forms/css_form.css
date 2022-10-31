@@ -1,0 +1,12 @@
+/*
+IMPORT_PRIORITY:10
+*/
+
+/*COMMON*/
+.css_form											{width:auto; margin:1px; background:#ff0000; color:#eeeeee; text-align:left;}
+.css_form .css_header								{/*background:#5a7fa0;*/ padding:4px;}
+.css_form .css_body									{/*background:#ebf3fa;*/ padding:2px;}
+.css_form .css_footer								{/*background:#ebf3fa;*/ padding:2px;}
+
+/*COMPONENTS*/
+/*.css_form .css_hidden_textfield_component			{padding:0;}*/

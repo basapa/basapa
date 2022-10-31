@@ -1,0 +1,37 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_login_form											{float:right;}
+.css_login_form .css_header								{}
+.css_login_form .css_body								{padding:0; background:none;}
+.css_login_form .css_footer								{}
+
+/*COMPONENTS*/
+/*login*/
+.css_login_form .css_textfield_component_01				{display:inline-block; padding:2px;}
+.css_login_form .css_textfield_component_01_element		{border:#2b587a solid 1px; width:100px;}
+.css_login_form .css_textfield_component_01 .css_caption	{color:white; margin-left:0;}
+
+/*password*/
+.css_login_form .css_textfield_component_02				{display:inline-block; padding:2px;}
+.css_login_form .css_textfield_component_02_element		{border:#2b587a solid 1px; width:100px;}
+.css_login_form .css_textfield_component_02 .css_caption	{color:white; margin-left:0;}
+
+/*submit*/
+.css_login_form .css_button_component_01				{display:inline-block; padding:0;}
+.css_login_form .css_button_component_01_element		{}
+
+/*remember me*/
+.css_login_form .css_checkbox_component_01				{display:inline-block; padding:0 2px;}
+.css_login_form .css_checkbox_component_01_element		{padding:0;}
+.css_login_form .css_checkbox_component_01 .css_post_name	{color:#a5c1dd; font-size: 11px; padding:0 0 0 2px;}
+
+/*recovery password*/
+.css_login_form .css_text_component_01					{float:right; width:150px; padding:0 8px 0 0;}
+.css_login_form .css_text_component_01_element			{color:#a5c1dd;}
+
+/*registration*/
+.css_login_form .css_text_component_02					{float:right; width:150px; padding:0 8px 0 0;}
+.css_login_form .css_text_component_02_element			{color:#a5c1dd;}

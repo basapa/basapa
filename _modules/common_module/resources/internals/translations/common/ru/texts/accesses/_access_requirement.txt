@@ -1,0 +1,32 @@
+<div class="css_browsers">
+	Для работы с сайтом необходима поддержка <b>Javascript</b> и <b>Cookies</b>.
+	<br>
+	<br>
+	Чтобы использовать все возможности сайта, загрузите и установите один из этих браузеров:
+	<br>
+	<a href="http://www.mozilla-europe.org/" target="_blank">
+		<img src="/resources/internals/images/common/modules/infos/messages/icons/browsers/firefox.gif" title="Mozilla Firefox" alt="Mozilla Firefox" border="0" width="70" height="67">
+		<br>
+		Mozilla Firefox
+	</a>
+	<a href="http://www.opera.com/" target="_blank">
+		<img src="/resources/internals/images/common/modules/infos/messages/icons/browsers/opera.gif" title="Opera" alt="Opera" border="0" width="63" height="67">
+		<br>
+		Opera
+	</a>
+	<a href="http://www.google.com/chrome/" target="_blank">
+		<img src="/resources/internals/images/common/modules/infos/messages/icons/browsers/chrome.gif" title="Google Chrome" alt="Google Chrome" border="0" width="70" height="67">
+		<br>
+		Google Chrome
+	</a>
+	<a href="http://www.apple.com/safari/" target="_blank">
+		<img src="/resources/internals/images/common/modules/infos/messages/icons/browsers/safari.gif" title="Safari" alt="Safari" border="0" width="66" height="74">
+		<br>
+		Safari
+	</a>
+	<a href="http://www.microsoft.com/rus/windows/internet-explorer/" target="_blank">
+		<img src="/resources/internals/images/common/modules/infos/messages/icons/browsers/explorer.gif" title="Internet Explorer" alt="Internet Explorer" border="0" width="74" height="74">
+		<br>
+		Internet Explorer
+	</a>
+</div>

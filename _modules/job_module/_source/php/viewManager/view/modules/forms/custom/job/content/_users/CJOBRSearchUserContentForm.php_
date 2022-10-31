@@ -1,0 +1,115 @@
+<?php
+
+
+//include_once(ROOT_PHP_DIRECTORY. 'viewManager/view/modules/forms/custom/job/CJOBRParentForm.php');
+
+
+class CJOBRSearchUserContentForm //extends CJOBRParentForm
+{
+	/***************************************************
+	 * PUBLIC
+	 */
+
+	/*
+	 * PUBLIC
+	 ***************************************************/
+
+
+	protected function __draw()
+	{
+		echo
+		'<div class="module_form" style="padding:0 2px;">',
+			$this->__module(),
+		'</div>';
+	}
+
+
+	protected function __body()
+	{
+		echo
+		'<div class="body_form" style="padding:0; text-align:right;">',
+			$this->__bodyContent(),
+		'</div>';
+	}
+
+
+	protected function __id()
+	{
+		return CJOBRTransmitConst::FORM_SEARCH_USER_CONTENT_FORM;
+	}
+
+
+	protected function __action()
+	{
+		$lStaticParams_arr	= array(CParamConst::SITE		=> CSiteConst::SITE_JOB,
+									CParamConst::PAGE		=> CPageConst::PAGE_JOB_ACCOUNT,
+									CParamConst::SUBPAGE	=> $this->__data()->param(CParamConst::SUBPAGE));
+		return CUrlConversion::getRealUrlByParams($lStaticParams_arr);
+	}
+
+
+	protected function __header()
+	{
+	}
+
+
+	protected function __footer()
+	{
+	}
+
+
+	protected function __bodyContent()
+	{
+		//text
+		/*$lSearchingName_str = $this->__data()->param(CParamConst::SEARCHING_NAME);
+		$lName_str = $lSearchingName_str ? 'поиск выполнен по » ' .$lSearchingName_str : 'поиск по названию';
+		$lParams_arr 	= array(CComponentParam::TEXT_TYPE 					=> CText::TYPE_MEDIUM,
+								CComponentParam::TEXT_NAME 					=> $lName_str,
+								CComponentParam::TEXT_STYLE					=> 'display:inline-block; width:440px; text-align:left;',
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#446b8f;');
+		$this->__components()->text()->draw($lParams_arr);*/
+
+		/*$lName_str = '';
+		$lParams_arr 	= array(CComponentParam::TEXT_TYPE 					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_NAME 					=> 'Параметры поиска:<br>Состояние: - Город: - ',
+								CComponentParam::TEXT_STYLE					=> 'display:inline-block; width:440px; text-align:left;',
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#444444');
+		$this->__components()->text()->draw($lParams_arr);*/
+
+		//name
+		$lSearchingName_str = $this->__data()->param(CParamConst::SEARCHING_NAME);
+		$lValue_str = $lSearchingName_str ? $lSearchingName_str : $this->__userFieldsData()->formFieldValue(CJOBRTransmitConst::FORM_SEARCH_USER_CONTENT_NAME);
+		$lParams_arr 	= array(CComponentParam::TEXTFIELD_ID 				=> CJOBRFieldIdConst::FORM_SEARCH_USER_CONTENT_NAME,
+								CComponentParam::TEXTFIELD_TRANSMIT 		=> CJOBRTransmitConst::FORM_SEARCH_USER_CONTENT_NAME,
+								CComponentParam::TEXTFIELD_REQUIRED 		=> CJOBRFieldRequiredConst::FORM_SEARCH_USER_CONTENT_NAME,
+								CComponentParam::TEXTFIELD_DESCRIPTION		=> CJOBRFieldDescriptionConst::FORM_SEARCH_USER_CONTENT_NAME,
+								CComponentParam::TEXTFIELD_PLACEHOLDER		=> CFieldPlaceholderConst::PLACEHOLDER_JOB_ENTER_JOB,
+								CComponentParam::TEXTFIELD_VALUE 			=> $lValue_str,
+								CComponentParam::TEXTFIELD_REQUIRED_FILLED	=> $this->__userFieldsData()->isFormFieldNeedFilled(CJOBRTransmitConst::FORM_SEARCH_USER_CONTENT_NAME),
+								CComponentParam::TEXTFIELD_NUM_CHARS 		=> CJOBRFieldLengthConst::FORM_SEARCH_USER_CONTENT_NAME,
+								CComponentParam::TEXTFIELD_TYPE 			=> CTextField::TYPE_TEXT,
+								CComponentParam::TEXTFIELD_STYLE			=> 'display:inline-block; padding:2px;',
+								CComponentParam::TEXTFIELD_STYLE_COMPONENT	=> 'width:250px;');
+		$this->__components()->textfield()->draw($lParams_arr);
+
+		//button
+		$lParams_arr 	= array(CComponentParam::BUTTON_ID 					=> CRequestConst::REQUEST_SEARCH_USER_CONTENT,
+								CComponentParam::BUTTON_NAME 				=> CFieldNameConst::BUTTON_SEARCH,
+								CComponentParam::BUTTON_TYPE 				=> CButton::TYPE_SUBMIT_WITH_PROGRESS_BAR,
+								CComponentParam::BUTTON_COLOR 				=> CButton::COLOR_BLUE,
+								CComponentParam::BUTTON_STYLE 				=> 'display:inline-block;');
+		$this->__components()->button()->draw($lParams_arr);
+
+		//hidden
+		$lParams_arr 	= array(CComponentParam::TEXTFIELD_ID				=> CJOBRFieldIdConst::FORM_SEARCH_USER_CONTENT_HIDDEN,
+								CComponentParam::TEXTFIELD_TRANSMIT			=> CJOBRTransmitConst::FORM_SEARCH_USER_CONTENT_HIDDEN,
+								CComponentParam::TEXTFIELD_VALUE 			=> $this->__hostData()->cookie(CMainConst::COOKIE_ANTI_SPAM),
+								CComponentParam::TEXTFIELD_NUM_CHARS 		=> CFieldLengthConst::HIDDEN,
+								CComponentParam::TEXTFIELD_TYPE 			=> CTextField::TYPE_HIDDEN,
+								CComponentParam::TEXTFIELD_STYLE 			=> 'padding:0;');
+		$this->__components()->textfield()->draw($lParams_arr);
+	}
+}
+
+
+?>

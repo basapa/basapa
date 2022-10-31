@@ -1,0 +1,101 @@
+<?php
+
+
+namespace basapa_ns;
+
+
+final class CSelectCityCompositeComponent extends CCompositeComponentBase
+{
+	const LISTBOX_COMPONENT_REGION						= 0;
+	const LISTBOX_COMPONENT_CITY						= 1;
+	
+	
+	/***************************************************
+	 * INTERFACE
+	 */
+	
+	/*
+	 * INTERFACE
+	 ***************************************************/
+	 
+	
+	protected function __draw()
+	{
+		$lComponents_arr = $this->__getComponents();
+		$lRegionComponent_arr = $lComponents_arr[CSelectCityCompositeComponent::LISTBOX_COMPONENT_REGION];
+		$lCityComponent_arr = $lComponents_arr[CSelectCityCompositeComponent::LISTBOX_COMPONENT_CITY];
+
+		$lFilled_str = CFieldValueConst::COMMON_EMPTY;
+		$lLength_int = 0;
+
+		$lRegionFilledRequired_bl = $this->__getComponentRequiredFilled($lRegionComponent_arr);
+		$lCityFilledRequired_bl = $this->__getComponentRequiredFilled($lCityComponent_arr);
+
+		$lRegionValue_int = $this->__getComponentValue($lRegionComponent_arr);
+		$lCityValue_int = $this->__getComponentValue($lCityComponent_arr);
+
+		if (($lRegionFilledRequired_bl && $lCityFilledRequired_bl) || (!isset($lRegionValue_int) && !isset($lCityValue_int)))
+		{
+			$lRegionData_arr = CDatabaseData::getInstance()->getRegionData(CDatabaseData::TYPE_REGION_DATA_BY_ID);
+			$lRegionId_int = $lRegionData_arr ? $lRegionData_arr[CDatabaseConst::TABLE_REGION_ID] : CFieldValueConst::COMMON_EMPTY;
+
+			$lCityData_arr = CDatabaseData::getInstance()->getCityData(CDatabaseData::TYPE_CITY_DATA_BY_ID);
+			$lCityId_int = $lCityData_arr ? $lCityData_arr[CDatabaseConst::TABLE_CITY_ID] : CFieldValueConst::COMMON_EMPTY;
+
+			if ($lRegionId_int && $lCityId_int)
+			{
+				$lRegionComponent_arr[CComponentParam::COMPONENT_PARAM_VALUE] = $lRegionId_int;
+				$lCityComponent_arr[CComponentParam::COMPONENT_PARAM_VALUE] = $lCityId_int;
+			}
+		}
+		else if ($lRegionFilledRequired_bl || $lCityFilledRequired_bl)
+		{
+			$lFilled_str .= $lRegionFilledRequired_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lRegionComponent_arr) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str .= $lCityFilledRequired_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lCityComponent_arr) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str = CFieldValueConst::COMMON_REQUIRED . $lFilled_str;
+
+			$lLength_int = mb_strlen($lFilled_str, 'utf-8') * 6;
+		}
+
+		//region
+		$lParams_arr	= array(CParamConst::REQUEST_AJAX	=> CAjaxConst::REQUEST_CITY,
+								CParamConst::ACTION			=> CActionConst::ACTION_GET_ALL_DATA);
+		$lAjaxRequest_str = CURLConversion::updateURL('', $lParams_arr, true);
+
+		$lJsChange_str = 'updateListboxData(\'' .$this->__getComponentId($lCityComponent_arr). '\', \'' .$lAjaxRequest_str. '\', \'' .SITE_FULL_NAME . CPageConst::PAGE_ERROR_403. '\', \'' .$this->__getComponentId($lRegionComponent_arr). '\', \'' .$this->__getComponentPlaceholder($lCityComponent_arr). '\');';
+		$lJsChange_str .= $this->__getComponentJsChange($lRegionComponent_arr);
+
+		$lParams_arr 	= array(CComponentParam::LISTBOX_ID 				=> $this->__getComponentId($lRegionComponent_arr),
+								CComponentParam::LISTBOX_TRANSMIT 			=> $this->__getComponentTransmit($lRegionComponent_arr),
+								CComponentParam::LISTBOX_REQUIRED 			=> $this->__getComponentRequired($lRegionComponent_arr),
+								CComponentParam::LISTBOX_NAME 				=> $this->__getComponentName($lRegionComponent_arr),
+								CComponentParam::LISTBOX_PLACEHOLDER 		=> $this->__getComponentPlaceholder($lRegionComponent_arr),
+								CComponentParam::LISTBOX_ELEMENTS 			=> $this->__getComponentElements($lRegionComponent_arr),
+								CComponentParam::LISTBOX_VALUE				=> $this->__getComponentValue($lRegionComponent_arr),
+								CComponentParam::LISTBOX_REQUIRED_FILLED	=> false,
+								CComponentParam::LISTBOX_STYLE				=> 'display:inline-block;',
+								CComponentParam::LISTBOX_JS_CHANGE			=> $lJsChange_str,
+								CComponentParam::LISTBOX_JS_FOCUS			=> 'jsHideFilledLB(\'' .$this->__getComponentId($lCityComponent_arr). '\');');
+		CComponentsView::getInstance()->getListbox()->draw($lParams_arr);
+		
+		//city
+		$lState_str = $this->__getComponentValue($lRegionComponent_arr) ? CListBox::STATE_ENABLED: CListBox::STATE_DISABLED;
+
+		$lParams_arr 	= array(CComponentParam::LISTBOX_ID 						=> $this->__getComponentId($lCityComponent_arr),
+								CComponentParam::LISTBOX_TRANSMIT 					=> $this->__getComponentTransmit($lCityComponent_arr),
+								CComponentParam::LISTBOX_REQUIRED 					=> $this->__getComponentRequired($lCityComponent_arr),
+								CComponentParam::LISTBOX_PLACEHOLDER 				=> $this->__getComponentPlaceholder($lCityComponent_arr),
+								CComponentParam::LISTBOX_ELEMENTS 					=> $this->__getComponentElements($lCityComponent_arr),
+								CComponentParam::LISTBOX_VALUE						=> $this->__getComponentValue($lCityComponent_arr),
+								CComponentParam::LISTBOX_REQUIRED_FILLED			=> !empty($lFilled_str),
+								CComponentParam::LISTBOX_REQUIRED_FILLED_MESSAGE	=> $lFilled_str,
+								CComponentParam::LISTBOX_STATE 						=> $lState_str,
+								CComponentParam::LISTBOX_STYLE			 			=> 'display:inline-block;',
+								CComponentParam::LISTBOX_STYLE_FILLED				=> 'width:' .$lLength_int. 'px;',
+								CComponentParam::LISTBOX_JS_CHANGE	 				=> $this->__getComponentJsChange($lCityComponent_arr));
+		CComponentsView::getInstance()->getListbox()->draw($lParams_arr);
+	}
+}
+
+
+?>

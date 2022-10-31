@@ -1,0 +1,20 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_subcategories_navigation_info							{}
+.css_job_subcategories_navigation_info .css_header				{}
+.css_job_subcategories_navigation_info .css_body					{overflow:hidden;}
+.css_job_subcategories_navigation_info .css_footer				{}
+
+/*COMPONENTS*/
+.css_job_subcategories_navigation_info .css_labellist_component_01					{position:relative; z-index:2;}
+.css_job_subcategories_navigation_info .css_labellist_component_01_element			{}
+.css_job_subcategories_navigation_info .css_labellist_component_01 .css_selected		{cursor:default; pointer-events:none;}
+
+.css_job_subcategories_navigation_info .css_item_element								{white-space:nowrap; width:202px;}
+
+/*INTERACTIONS*/
+.css_job_subcategories_navigation_info .css_labellist_component_01 ul li ul			{width:auto; padding:2px; position:absolute; top:-2px; left:172px;}
+.css_job_subcategories_navigation_info .css_labellist_component_01 ul li:hover ul	{display:inline-block;}

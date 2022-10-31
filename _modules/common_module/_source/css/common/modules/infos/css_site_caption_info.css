@@ -1,0 +1,19 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_site_caption_info											{display:inline-block; background:none;}
+.css_site_caption_info .css_header								{}
+.css_site_caption_info .css_body								{/*height:80px;*/}
+.css_site_caption_info .css_footer								{}
+
+/*COMPONENTS*/
+/*.css_site_caption_info .css_image_component_image				{display:inline-block;}
+.css_site_caption_info .css_image_component_element_image		{}*/
+
+.css_site_caption_info .css_text_component_caption				{/*display:inline-block; position:absolute; top:15px; left:100px;*/}
+.css_site_caption_info .css_text_component_element_caption		{font-size:22px; color:#0b71d9; font-weight:bold;}
+
+/*.css_site_caption_info .css_text_component_description			{display:inline-block; position:absolute; top:40px; left:100px;}
+.css_site_caption_info .css_text_component_element_description	{color:#eeeeee; font-weight:bold;}*/

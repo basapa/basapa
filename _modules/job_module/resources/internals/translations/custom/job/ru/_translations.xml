@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--FILE TRANSLATION STATUS: COMPLETED (REQUIRED, IN_PROGRESS, COMPLETED)-->
+<!--FIELD MARKERS:--><!--NOT_TRANSLATED-->
+<!DOCTYPE translations
+[
+<!ENTITY nbsp "&#160;">
+<!ENTITY br "&lt;br/&gt;">
+
+<!ENTITY SITE_NAME "JOB BASAPA">
+<!ENTITY site_name "job.basapa.ru">
+<!ENTITY site_email "support@basapa.ru">
+
+<!--form-->
+	<!--form_messages-->
+		<!--error_messages_caption--><!ENTITY form_error_messages_caption "Ошибка">
+		<!--warning_messages_caption--><!ENTITY form_warning_messages_caption "Предупреждение">
+		<!--success_messages_caption--><!ENTITY form_success_messages_caption "Уведомление">
+
+		<!--empty_fields_message--><!ENTITY form_empty_fields_message "Вы заполнили не все обязательные поля.">
+		<!--empty_mandatory_fields_message--><!ENTITY form_empty_mandatory_fields_message "Вы заполнили не все обязательные поля.">
+	<!--/form_messages-->
+<!--/form-->
+
+<!--button-->
+<!--/button-->
+
+<!--image-->
+<!--/image-->
+
+<!--labellist-->
+<!--/labellist-->
+
+<!--listbox-->
+	<!--messages-->
+		<!--data_empty_message--><!ENTITY listbox_data_empty_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; необходимо заполнить.">
+	<!--/messages-->
+<!--/listbox-->
+
+<!--radiobutton-->
+<!--/radiobutton-->
+
+<!--text-->
+	<!--value--><!ENTITY about_mandatory_fields_note_text "&lt;span class=&quot;css_mandatory_field&quot;>*&lt;/span&gt; - обязательные поля для заполнения">
+<!--/text-->
+
+<!--textarea-->
+	<!--description--><!ENTITY textarea_description "Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.">
+	<!--messages-->
+		<!--data_empty_message--><!ENTITY textarea_data_empty_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; необходимо заполнить.">
+		<!--illegal_chars_message--><!ENTITY textarea_illegal_chars_message "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.">
+		<!--wrong_chars_count_message--><!ENTITY textarea_wrong_chars_count_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.">
+	<!--/messages-->
+<!--/textarea-->
+
+<!--textfield-->
+	<!--description--><!ENTITY textfield_description "Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.">
+	<!--messages-->
+		<!--data_empty_message--><!ENTITY textfield_data_empty_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; необходимо заполнить.">
+		<!--illegal_chars_message--><!ENTITY textfield_illegal_chars_message "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.">
+		<!--illegal_chars_message_by_login_password--><!ENTITY textfield_illegal_chars_message_by_login_password "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.&br;Разрешено вводить латинские буквы от&lt;b&gt;A&lt;/b&gt; до &lt;b&gt;Z&lt;/b&gt;, а также цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;_&lt;/b&gt;">
+		<!--illegal_chars_message_by_numbers--><!ENTITY textfield_illegal_chars_message_by_numbers "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.&br;Разрешено вводить только цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt;">
+		<!--illegal_chars_message_by_phone_number--><!ENTITY textfield_illegal_chars_message_by_phone_number "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.&br;Разрешено вводить только цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;+&lt;/b&gt;">
+		<!--wrong_chars_count_message--><!ENTITY textfield_wrong_chars_count_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.">
+	<!--/messages-->
+<!--/textfield-->
+
+<!ENTITY common_forms SYSTEM "../../../common/ru/_forms.xml">
+<!ENTITY common_infos SYSTEM "../../../common/ru/_infos.xml">
+<!ENTITY common_pages SYSTEM "../../../common/ru/_pages.xml">
+]>
+<translations>
+	<pages>
+		&common_pages;
+
+		<contents_page>
+			<title>&SITE_NAME; - Главная</title>
+			<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+			<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+		</contents_page>
+
+		<content_page>
+			<title>&SITE_NAME; - Главная</title>
+			<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+			<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+		</content_page>
+
+		<administration_page>
+			<title>&SITE_NAME; - Главная</title>
+			<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+			<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+		</administration_page>
+	</pages>
+
+	<forms>
+		&common_forms;
+
+		<!--VACANCY CONTENT ADDITION...-->
+		<vacancy_content_addition_form>
+			<form_name>Добавить вакансию</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Добавить вакансию не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+				<success_message>Вакансия добавлена.</success_message>
+			</form_messages>
+
+			<caption_textfield>
+				<name>Требуется:</name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</caption_textfield>
+
+			<wage_from_textfield>
+				<name>Зарплата:</name>
+				<pre_name>от</pre_name>
+				<post_name></post_name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message_by_numbers;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</wage_from_textfield>
+
+			<wage_to_textfield>
+				<name></name>
+				<pre_name>до</pre_name>
+				<post_name></post_name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message_by_numbers;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</wage_to_textfield>
+
+			<wage_currency_listbox>
+				<name></name>
+				<pre_name></pre_name>
+				<post_name></post_name>
+				<placeholder>...</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</wage_currency_listbox>
+
+			<description_textarea>
+				<name>Описание:</name>
+				<placeholder></placeholder>
+				<description>&textarea_description;</description>
+				<messages>
+					<data_empty_message>&textarea_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textarea_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textarea_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</description_textarea>
+
+			<employer_textfield>
+				<name>Работодатель:</name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</employer_textfield>
+
+			<employer_city_listbox>
+				<name>Местоположение:</name>
+				<placeholder>не выбрано...</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</employer_city_listbox>
+
+			<external_source_textfield>
+				<name>Источник:</name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</external_source_textfield>
+
+			<submit_button>
+				<name>Добавить</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</vacancy_content_addition_form>
+		<!--...VACANCY CONTENT ADDITION-->
+		
+		<!--CONTENT EDITION...-->
+		<content_edition_form>
+			<form_name>Редактировать аватарку</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.!!!</failed_message>
+				<success_message>Сообщение отправлено.!!!</success_message>
+			</form_messages>
+
+			<content_name_textfield>
+				<name>Имя аватарки:</name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</content_name_textfield>
+
+			<content_files_uploading_composite>
+				<messages>
+					<data_empty_message>Файл необходимо выбрать.</data_empty_message>
+					<max_file_size_exceeded_message>Превышен макс. размер файла.</max_file_size_exceeded_message>
+					<wrong_file_format_message>Выбран неверный формат файла.</wrong_file_format_message>
+				</messages>
+
+				<file_name_labelfield>
+					<name>&nbsp;</name>
+					<value>Файл не выбран</value>
+					<description></description>
+				</file_name_labelfield>
+
+				<file_uploading_button>
+					<name>Выбрать...</name>
+				</file_uploading_button>
+			</content_files_uploading_composite>
+
+			<content_category_listbox>
+				<name>Категория:</name>
+				<placeholder>Категория не выбрана...</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</content_category_listbox>
+
+			<submit_button>
+				<name>Редактировать</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</content_edition_form>
+		<!--...CONTENT EDITION-->
+
+		<!--VACANCY CONTENT MAIN QUICK SEARCH...-->
+		<vacancy_content_main_quick_search_form>
+			<form_name></form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Выполнить поиск не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+				<success_message>Поиск выполнен.</success_message>
+			</form_messages>
+
+			<search_text_textfield>
+				<name></name>
+				<value></value>
+				<placeholder>Какую вакансию ищите?</placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</search_text_textfield>
+
+			<region_listbox>
+				<name></name>
+				<!--placeholder>Выберите регион</placeholder-->
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</region_listbox>
+
+			<city_listbox>
+				<name></name>
+				<placeholder>Все города</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</city_listbox>
+
+			<submit_button>
+				<name>Найти вакансии</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</vacancy_content_main_quick_search_form>
+		<!--...VACANCY CONTENT MAIN QUICK SEARCH-->
+
+		<!--VACANCY CONTENT QUICK SEARCH...-->
+		<vacancy_content_quick_search_form>
+			<form_name></form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Выполнить поиск не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+				<success_message>Поиск выполнен.</success_message>
+			</form_messages>
+
+			<search_text_textfield>
+				<name></name>
+				<value></value>
+				<placeholder>Я ищу...</placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</search_text_textfield>
+
+			<region_listbox>
+				<name></name>
+				<!--placeholder>Все регионы</placeholder-->
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</region_listbox>
+
+			<city_listbox>
+				<name></name>
+				<placeholder>Все города</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</city_listbox>
+
+			<submit_button>
+				<name>Найти</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</vacancy_content_quick_search_form>
+		<!--...VACANCY CONTENT QUICK SEARCH-->
+		
+		<!--VACANCY CONTENT SEARCH...-->
+		<vacancy_content_search_form>
+			<form_name>найти аватарку</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.!!!</failed_message>
+				<success_message>Сообщение отправлено.!!!</success_message>
+			</form_messages>
+
+			<content_name_textfield>
+				<name>Имя аватарки:</name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</content_name_textfield>
+
+			<content_files_uploading_composite>
+				<messages>
+					<data_empty_message>Файл необходимо выбрать.</data_empty_message>
+					<max_file_size_exceeded_message>Превышен макс. размер файла.</max_file_size_exceeded_message>
+					<wrong_file_format_message>Выбран неверный формат файла.</wrong_file_format_message>
+				</messages>
+
+				<file_name_labelfield>
+					<name>&nbsp;</name>
+					<value>Файл не выбран</value>
+					<description></description>
+				</file_name_labelfield>
+
+				<file_uploading_button>
+					<name>Выбрать...</name>
+				</file_uploading_button>
+			</content_files_uploading_composite>
+
+			<content_category_listbox>
+				<name>Категория:</name>
+				<placeholder>Категория не выбрана...</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</content_category_listbox>
+
+			<submit_button>
+				<name>Найти</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</vacancy_content_search_form>
+		<!--...VACANCY CONTENT SEARCH-->
+
+		<!--VACANCY CONTENT FILTERING...-->
+		<vacancy_content_filtering_form>
+			<form_name>Фильтры</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.!!!</failed_message>
+				<success_message>Сообщение отправлено.!!!</success_message>
+			</form_messages>
+
+			<addition_time_filters_radiobutton>
+				<name>Дата публикации</name>
+			</addition_time_filters_radiobutton>
+
+			<wage_filters_radiobutton>
+				<name>Зарплата</name>
+			</wage_filters_radiobutton>
+
+			<work_experience_filters_radiobutton>
+				<name>Опыт работы</name>
+			</work_experience_filters_radiobutton>
+
+			<work_schedule_filters_radiobutton>
+				<name>График работы</name>
+			</work_schedule_filters_radiobutton>
+
+			<submit_button>
+				<name>Применить</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</vacancy_content_filtering_form>
+		<!--...VACANCY CONTENT FILTERING-->
+
+		<!--CONTENTS ADMINISTRATION...-->
+		<contents_administration_form>
+			<form_name>Администрирование</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.!!!</failed_message>
+				<success_message>Сообщение отправлено.!!!</success_message>
+			</form_messages>
+
+			<table_captions_list>
+				<items>
+					<item id="id">№</item>
+					<item id="state">Состояние</item>
+					<item id="addition_time">Добавлено</item>
+					<item id="updating_time">Обновлено</item>
+					<item id="expiring_time">Истекает</item>
+					<item id="description">Описание</item>
+					<item id="actions"></item>
+				</items>
+			</table_captions_list>
+
+			<actions_listbox>
+				<name></name>
+				<items>
+					<item id="0">Не выбрано</item>
+					<item id="1">Проверяется</item>
+					<item id="3">Активна</item>
+					<item id="4">Неактивна</item>
+					<item id="5">Заблокирована</item>
+					<item id="6">Удалена</item>
+				</items>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</actions_listbox>
+
+			<submit_button>
+				<name>Применить</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</contents_administration_form>
+		<!--...CONTENTS ADMINISTRATION-->
+		
+		<!--CONTENT MANAGEMENT...-->
+		<content_management_form>
+			<form_name>найти аватарку</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.!!!</failed_message>
+				<success_message>Сообщение отправлено.!!!</success_message>
+			</form_messages>
+
+			<content_name_textfield>
+				<name>Имя аватарки:</name>
+				<placeholder></placeholder>
+				<description>&textfield_description;</description>
+				<messages>
+					<data_empty_message>&textfield_data_empty_message;</data_empty_message>
+					<illegal_chars_message>&textfield_illegal_chars_message;</illegal_chars_message>
+					<wrong_chars_count_message>&textfield_wrong_chars_count_message;</wrong_chars_count_message>
+				</messages>
+			</content_name_textfield>
+
+			<content_files_uploading_composite>
+				<messages>
+					<data_empty_message>Файл необходимо выбрать.</data_empty_message>
+					<max_file_size_exceeded_message>Превышен макс. размер файла.</max_file_size_exceeded_message>
+					<wrong_file_format_message>Выбран неверный формат файла.</wrong_file_format_message>
+				</messages>
+
+				<content_file_name_labelfield>
+					<name>&nbsp;</name>
+					<value>Файл не выбран</value>
+					<description></description>
+				</content_file_name_labelfield>
+
+				<content_file_uploading_button>
+					<name>Выбрать...</name>
+				</content_file_uploading_button>
+			</content_files_uploading_composite>
+
+			<content_category_listbox>
+				<name>Категория:</name>
+				<placeholder>Категория не выбрана...</placeholder>
+				<description></description>
+				<messages>
+					<data_empty_message>&listbox_data_empty_message;</data_empty_message>
+				</messages>
+			</content_category_listbox>
+
+			<submit_button>
+				<name>Найти</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&about_mandatory_fields_note_text;</value>
+			</about_mandatory_fields_note_text>
+		</content_management_form>
+		<!--...CONTENT MANAGEMENT-->
+	</forms>
+
+	<infos>
+		&common_infos;
+
+		<!--WELCOME DESCRIPTION...-->
+		<!--Вакансии по Сибири (Томская, Новосибирская и Кемеровская области);-->
+		<welcome_description_info>
+			<info_name></info_name>
+
+			<caption_text>
+				<value>&lt;span class="blue"&gt;Работа в Томской области&lt;/span&gt;</value>
+			</caption_text>
+
+			<description_text>
+				<value>Найдите свою новую работу сегодня.</value>
+			</description_text>
+		</welcome_description_info>
+		<!--...WELCOME DESCRIPTION-->
+
+		<!--TOP CITIES PREVIEW...-->
+		<top_cities_preview_info>
+			<info_name></info_name>
+
+			<caption_text>
+				<value>Выберите город:</value>
+			</caption_text>
+		</top_cities_preview_info>
+		<!--...TOP CITIES PREVIEW-->
+
+		<!--CONTENT PREVIEW...-->
+		<vacancy_content_preview_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<caption_text>
+				<value>#VALUE#</value>
+			</caption_text>
+
+			<wage_text>
+				<value>#VALUE#</value>
+			</wage_text>
+
+			<description_text>
+				<value>#VALUE#</value>
+			</description_text>
+
+			<employer_text>
+				<value>#VALUE#</value>
+			</employer_text>
+
+			<employer_city_text>
+				<value>#VALUE#</value>
+			</employer_city_text>
+
+			<addition_time_text>
+				<value>#VALUE#</value>
+			</addition_time_text>
+		</vacancy_content_preview_info>
+		<!--...CONTENT PREVIEW-->
+
+		<!--CONTENT...-->
+		<content_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<content_name_labelfield>
+				<name>Имя:</name>
+				<value></value>
+				<description></description>
+			</content_name_labelfield>
+
+			<content_image>
+				<name>Аватар:</name>
+				<value></value>
+				<description></description>
+			</content_image>
+
+			<content__download_button>
+				<name>Скачать</name>
+			</content__download_button>
+
+			<content_addition_date_labelfield>
+				<name>Добавлено:</name>
+				<value></value>
+				<description></description>
+			</content_addition_date_labelfield>
+		</content_info>
+		<!--...CONTENT-->
+
+		<!--CONTENT GROUP PREVIEW BY CATEGORY...-->
+		<content_group_preview_by_category_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<category_name_text>
+				<value>Аватарки #NAME#</value>
+			</category_name_text>
+		</content_group_preview_by_category_info>
+		<!--...CONTENT GROUP PREVIEW BY CATEGORY-->
+
+		<!--CONTENT GROUP RANDOM PREVIEW...-->
+		<content_group_random_preview_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<content_name_labelfield>
+				<name>Name</name>
+				<value></value>
+				<description></description>
+			</content_name_labelfield>
+		</content_group_random_preview_info>
+		<!--...CONTENT GROUP RANDOM PREVIEW-->
+
+		<navigations>
+			<!--ADDITIONAL PAGES NAVIGATION...-->
+			<additional_pages_navigation_info>
+				<info_name>Доп. навигация страниц</info_name>
+
+				<pages_labellist>
+					<name></name>
+					<items>
+						<item id="debug">Отладка</item>
+					</items>
+				</pages_labellist>
+			</additional_pages_navigation_info>
+			<!--...ADDITIONAL PAGES NAVIGATION-->
+
+			<!--PAGES NAVIGATION...-->
+			<pages_navigation_info>
+				<info_name>Навигация страниц</info_name>
+
+				<pages_labellist>
+					<name></name>
+					<items>
+						<item id="main">Главная</item>
+						<item id="contents">Вакансии</item>
+						<item id="debug">Отладка</item>
+					</items>
+				</pages_labellist>
+			</pages_navigation_info>
+			<!--...PAGES NAVIGATION-->
+		</navigations>
+		
+		<panels>
+			<!--CONTENT ADDITION PANEL...-->
+			<content_addition_panel_info>
+				<info_name>&SITE_NAME;</info_name>
+
+				<content_addition_button>
+					<name>Добавить объявление</name>
+				</content_addition_button>
+			</content_addition_panel_info>
+			<!--...CONTENT ADDITION PANEL-->
+		</panels>
+	</infos>
+</translations>

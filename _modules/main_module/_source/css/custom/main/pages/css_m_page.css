@@ -1,0 +1,16 @@
+/*
+IMPORT_PRIORITY:5
+*/
+.css_m_page									{}
+
+/*SECTIONS*/
+.css_m_page_section							{}
+.css_m_page_header_section					{background:white; border:#dedede solid 1px; height:84px;}
+.css_m_page_left_section						{background:white; border:#dedede solid 1px; float:left; width:300px;}
+.css_m_page_right_section						{background:white; border:#dedede solid 1px; float:right; width:300px;}
+.css_m_page_pre_content_section				{background:#9f9f9f; border:#737373 solid 1px; margin:2px 0;}
+.css_m_page_content_section					{background:white; border:#dedede solid 1px; margin:0 300px 0 300px; width:auto;}
+.css_m_page_post_content_section				{background:#9f9f9f; border:#737373 solid 1px; clear:both;}
+.css_m_page_footer_section					{padding:1px; text-align:center;}
+.css_m_page_float_left_section				{background:white; border:#dedede solid 1px; width:300px;}
+.css_m_page_float_right_section				{background:white; border:#dedede solid 1px; width:300px;}

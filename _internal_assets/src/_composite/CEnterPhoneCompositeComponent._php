@@ -1,0 +1,106 @@
+<?php
+
+
+namespace basapa_ns;
+
+
+final class CEnterPhoneCompositeComponent extends CCompositeComponentBase
+{
+	const TEXTFIELD_COMPONENT_CODE						= 0;
+	const TEXTFIELD_COMPONENT_NUMBER					= 1;
+	const TEXTFIELD_COMPONENT_ADDITIONAL				= 2;
+	
+	
+	/***************************************************
+	 * INTERFACE
+	 */
+	
+	/*
+	 * INTERFACE
+	 ***************************************************/
+	 
+	
+	protected function __draw()
+	{
+		$lComponents_arr = $this->__getComponents();
+		$lCodeComponent_obj = $lComponents_arr[CEnterPhoneCompositeComponent::TEXTFIELD_COMPONENT_CODE];
+		$lNumberComponent_obj = $lComponents_arr[CEnterPhoneCompositeComponent::TEXTFIELD_COMPONENT_NUMBER];
+		$lAdditionalComponent_obj = $lComponents_arr[CEnterPhoneCompositeComponent::TEXTFIELD_COMPONENT_ADDITIONAL];
+
+		$lFilled_str = CFieldValueConst::COMMON_EMPTY;
+		$lLength_int = 0;
+		$lIsCodeFilled_bl = $lIsNumberFilled_bl = $lIsAdditionalFilled_bl = false;
+
+		$lCodeValue_str = $this->__getComponentValue($lCodeComponent_obj);
+		$lNumberValue_str = $this->__getComponentValue($lNumberComponent_obj);
+		$lAdditionalValue_str = $this->__getComponentValue($lAdditionalComponent_obj);
+
+		if (!empty($lCodeValue_str) || !empty($lNumberValue_str))
+		{
+			$lIsCodeFilled_bl = $this->__getComponentRequiredFilled($lCodeComponent_obj);
+			$lIsNumberFilled_bl = $this->__getComponentRequiredFilled($lNumberComponent_obj);
+			$lIsAdditionalFilled_bl = $this->__getComponentRequiredFilled($lAdditionalComponent_obj);
+		}
+
+		if ($lIsCodeFilled_bl || $lIsNumberFilled_bl || $lIsAdditionalFilled_bl)
+		{
+			$lFilled_str .= $lIsCodeFilled_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lCodeComponent_obj) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str .= $lIsNumberFilled_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lNumberComponent_obj) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str .= $lIsAdditionalFilled_bl ? $this->__getSeparator($lFilled_str) . $this->__getComponentPlaceholder($lAdditionalComponent_obj) : CFieldValueConst::COMMON_EMPTY;
+			$lFilled_str = CFieldValueConst::COMMON_REQUIRED_FILLED . $lFilled_str;
+
+			$lLength_int = mb_strlen($lFilled_str, 'utf-8') * 6;
+		}
+
+		$lComponentsStyle_str = $this->__getComponentsStyle();
+
+		//code
+		$lParams_arr	= array(CComponentParam::TEXTFIELD_ID 				=> $this->__getComponentId($lCodeComponent_obj),
+								CComponentParam::TEXTFIELD_TRANSMIT 		=> $this->__getComponentTransmit($lCodeComponent_obj),
+								CComponentParam::TEXTFIELD_REQUIRED 		=> $this->__getComponentRequired($lCodeComponent_obj),
+								CComponentParam::TEXTFIELD_NAME	 			=> $this->__getComponentName($lCodeComponent_obj),
+								CComponentParam::TEXTFIELD_NAME_PRE_FIELD	=> '+7',
+								CComponentParam::TEXTFIELD_PLACEHOLDER		=> $this->__getComponentPlaceholder($lCodeComponent_obj),
+								CComponentParam::TEXTFIELD_VALUE	 		=> $lCodeValue_str,
+								CComponentParam::TEXTFIELD_REQUIRED_FILLED 	=> false,
+								CComponentParam::TEXTFIELD_NUM_CHARS 		=> $this->__getComponentNumChars($lCodeComponent_obj),
+								CComponentParam::TEXTFIELD_TYPE 			=> CTextField::TYPE_TEXT,
+								CComponentParam::TEXTFIELD_STYLE			=> 'display:inline-block;' .$lComponentsStyle_str,
+								CComponentParam::TEXTFIELD_STYLE_COMPONENT 	=> 'width:40px;',
+								CComponentParam::TEXTFIELD_JS_FOCUS			=> 'jsHideFilledTF(\'' .$this->__getComponentId($lAdditionalComponent_obj). '\');');
+		CComponentsView::getInstance()->getTextfield()->draw($lParams_arr);
+		
+		//number
+		$lParams_arr 	= array(CComponentParam::TEXTFIELD_ID 				=> $this->__getComponentId($lNumberComponent_obj),
+							 CComponentParam::TEXTFIELD_TRANSMIT 			=> $this->__getComponentTransmit($lNumberComponent_obj),
+							 CComponentParam::TEXTFIELD_REQUIRED 			=> $this->__getComponentRequired($lNumberComponent_obj),
+							 CComponentParam::TEXTFIELD_PLACEHOLDER			=> $this->__getComponentPlaceholder($lNumberComponent_obj),
+							 CComponentParam::TEXTFIELD_VALUE	 			=> $lNumberValue_str,
+							 CComponentParam::TEXTFIELD_REQUIRED_FILLED		=> false,
+							 CComponentParam::TEXTFIELD_NUM_CHARS 			=> $this->__getComponentNumChars($lNumberComponent_obj),
+							 CComponentParam::TEXTFIELD_TYPE 				=> CTextField::TYPE_TEXT,
+							 CComponentParam::TEXTFIELD_STYLE			 	=> 'display:inline-block;' .$lComponentsStyle_str,
+							 CComponentParam::TEXTFIELD_STYLE_COMPONENT 	=> 'width:120px;',
+							 CComponentParam::TEXTFIELD_JS_FOCUS			=> 'jsHideFilledTF(\'' .$this->__getComponentId($lAdditionalComponent_obj). '\');');
+		CComponentsView::getInstance()->getTextfield()->draw($lParams_arr);
+		
+		//additional
+		$lParams_arr 	= array(CComponentParam::TEXTFIELD_ID 					=> $this->__getComponentId($lAdditionalComponent_obj),
+							 CComponentParam::TEXTFIELD_TRANSMIT 				=> $this->__getComponentTransmit($lAdditionalComponent_obj),
+							 CComponentParam::TEXTFIELD_REQUIRED 				=> $this->__getComponentRequired($lAdditionalComponent_obj),
+							 CComponentParam::TEXTFIELD_PLACEHOLDER				=> $this->__getComponentPlaceholder($lAdditionalComponent_obj),
+							 CComponentParam::TEXTFIELD_VALUE	 				=> $lAdditionalValue_str,
+							 CComponentParam::TEXTFIELD_REQUIRED_FILLED			=> $this->__getComponentRequiredFilled($lAdditionalComponent_obj),
+							 CComponentParam::TEXTFIELD_REQUIRED_FILLED			=> !empty($lFilled_str),
+							 CComponentParam::TEXTFIELD_REQUIRED_FILLED_MESSAGE	=> $lFilled_str,
+							 CComponentParam::TEXTFIELD_NUM_CHARS 				=> $this->__getComponentNumChars($lAdditionalComponent_obj),
+							 CComponentParam::TEXTFIELD_TYPE 					=> CTextField::TYPE_TEXT,
+							 CComponentParam::TEXTFIELD_STYLE			 		=> 'display:inline-block;' .$lComponentsStyle_str,
+							 CComponentParam::TEXTFIELD_STYLE_FILLED			=> 'width:' .$lLength_int. 'px;',
+							 CComponentParam::TEXTFIELD_STYLE_COMPONENT 		=> 'width:120px;');
+		CComponentsView::getInstance()->getTextfield()->draw($lParams_arr);
+	}
+}
+
+
+?>

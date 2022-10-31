@@ -1,0 +1,18 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_error_403_info										{}
+.css_error_403_info .css_header							{}
+.css_error_403_info .css_body								{}
+.css_error_403_info .css_footer							{}
+
+/*COMPONENTS*/
+.css_error_403_info .css_text_component_error_403_title			{}
+.css_error_403_info .css_text_component_element_error_403_title	{color:#707070; font-size:14px; font-weight:bold;}
+
+.css_error_403_info .css_text_component_error_403_text				{}
+.css_error_403_info .css_text_component_element_error_403_text		{}
+
+.css_error_403_info .css_text_component_element_error_403_text a	{color: black; font-weight:bold;}

@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_error_message_info									{background:#fbe3e3; border:#f6c8c8 solid 1px;}
+.css_error_message_info .css_header						{}
+.css_error_message_info .css_body						{background:#fef1f1;}
+.css_error_message_info .css_footer						{}
+
+/*INTERACTIONS*/
+/*.css_error_message_info .css_close_button				{background-position: -30px 0;}
+.css_error_message_info .css_close_button:hover			{background-position: -30px -15px;}*/
+
+/*COMPONENTS*/
+.css_error_message_info .css_text_component_message_title						{}
+.css_error_message_info .css_text_component_element_message_title				{color:#e76d6d;}

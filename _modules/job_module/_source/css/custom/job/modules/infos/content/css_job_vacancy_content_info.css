@@ -1,0 +1,33 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_vacancy_content_info											{}
+.css_job_vacancy_content_info .css_header								{}
+.css_job_vacancy_content_info .css_body									{}
+.css_job_vacancy_content_info .css_footer								{}
+
+/*COMPONENTS*/
+.css_job_vacancy_content_info .css_text_component_info_name				{}
+.css_job_vacancy_content_info .css_text_component_element_info_name		{}
+
+.css_job_vacancy_content_info .css_info_body_left_part					{display:inline-block;}
+.css_job_vacancy_content_info .css_info_body_right_part					{display:inline-block; vertical-align:top;}
+
+.css_job_vacancy_content_info .css_image_component_job_image			{}
+.css_job_vacancy_content_info .css_image_component_element_job_image	{}
+
+.css_job_vacancy_content_info .css_button_component_job_download			{padding-top:4px; text-align:center;}
+.css_job_vacancy_content_info .css_button_component_element_job_download	{padding:4px 24px;}
+
+.css_job_vacancy_content_info .css_labelfield_component_job_name						{}
+.css_job_vacancy_content_info .css_labelfield_component_element_job_name				{}
+
+.css_job_vacancy_content_info .css_labelfield_component_job_resolution				{}
+.css_job_vacancy_content_info .css_labelfield_component_element_job_resolution		{}
+.css_job_vacancy_content_info .css_labelfield_component_job_resolution .css_element	{width:80px;}
+
+.css_job_vacancy_content_info .css_labelfield_component_job_file_size					{}
+.css_job_vacancy_content_info .css_labelfield_component_element_job_file_size			{}
+.css_job_vacancy_content_info .css_labelfield_component_job_file_size .css_element	{width:80px;}

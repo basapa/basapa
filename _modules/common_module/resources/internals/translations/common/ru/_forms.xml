@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--FILE TRANSLATION STATUS: COMPLETED (REQUIRED, IN_PROGRESS, COMPLETED)-->
+<!--FIELD MARKERS:--><!--NOT_TRANSLATED-->
+<!--PAYMENT...-->
+<payment_form>
+	<form_name>Пожертвование</form_name>
+
+	<form_messages>
+		<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+		<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+		<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+		<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+		<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+		<success_message>Сообщение отправлено.</success_message>
+	</form_messages>
+
+	<amount_textfield>
+		<name>Сумма пожертвования:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</amount_textfield>
+
+	<name_textfield>
+		<name>Имя:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</name_textfield>
+
+	<email_textfield>
+		<name>E-mail:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</illegal_chars_message>
+			<wrong_chars_count_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</wrong_chars_count_message>
+		</messages>
+	</email_textfield>
+
+	<message_textarea>
+		<name>Комментарий:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</message_textarea>
+	
+	<submit_button>
+		<name>Пожертвовать</name>
+	</submit_button>
+
+	<about_mandatory_fields_note_text>
+		<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+	</about_mandatory_fields_note_text>
+</payment_form>
+<!--...PAYMENT-->
+
+<!--SUPPORT...-->
+<support_form>
+	<form_name>Техподдержка</form_name>
+
+	<form_messages>
+		<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+		<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+		<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+		<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+		<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+		<success_message>Сообщение отправлено.</success_message>
+	</form_messages>
+
+	<caption_textfield>
+		<name>Тема письма:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</caption_textfield>
+
+	<message_textarea>
+		<name>Сообщение:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</message_textarea>
+
+	<email_textfield>
+		<name>E-mail:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</illegal_chars_message>
+			<wrong_chars_count_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</wrong_chars_count_message>
+		</messages>
+	</email_textfield>
+
+	<submit_button>
+		<name>Отправить</name>
+	</submit_button>
+
+	<about_mandatory_fields_note_text>
+		<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+	</about_mandatory_fields_note_text>
+</support_form>
+<!--...SUPPORT-->
+
+<!--USER AUTHORIZATION...-->
+<user_authorization_form>
+	<form_name>Авторизация пользователя</form_name>
+
+	<form_messages>
+		<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+		<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+		<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+		<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+		<failed_message>Авторизация пользователя не удалась, пожалуйста, попробуйте еще раз.</failed_message>
+		<success_message>Авторизация пользователя прошла успешно.</success_message>
+	</form_messages>
+
+	<login_textfield>
+		<name>Логин:</name>
+		<placeholder>введите логин</placeholder>
+		<description>Логин должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;Логин&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;Логин&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</login_textfield>
+
+	<password_textfield>
+		<name>Пароль:</name>
+		<placeholder>******</placeholder>
+		<description>Пароль должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;Пароль&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;Пароль&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</password_textfield>
+
+	<submit_button>
+		<name>Авторизоваться</name>
+	</submit_button>
+
+	<about_mandatory_fields_note_text>
+		<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+	</about_mandatory_fields_note_text>
+</user_authorization_form>
+<!--...USER AUTHORIZATION-->
+
+<!--USER REGISTRATION...-->
+<user_registration_form>
+	<form_name>Регистрация пользователя</form_name>
+
+	<form_messages>
+		<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+		<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+		<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+		<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+		<failed_message>Регистрация пользователя не удалась, пожалуйста, попробуйте еще раз.</failed_message>
+		<success_message>Регистрация пользователя прошла успешно.</success_message>
+	</form_messages>
+
+	<login_textfield>
+		<name>Логин:</name>
+		<placeholder>введите логин</placeholder>
+		<description>Логин должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;Логин&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;Логин&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</login_textfield>
+
+	<password_textfield>
+		<name>Пароль:</name>
+		<placeholder>******</placeholder>
+		<description>Пароль должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;Пароль&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;Пароль&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</password_textfield>
+
+	<repeat_password_textfield>
+		<name>Повторите пароль:</name>
+		<placeholder>******</placeholder>
+		<description>Пароль должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;Повторите пароль&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;Повторите пароль&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</repeat_password_textfield>
+
+	<email_textfield>
+		<name>E-mail:</name>
+		<placeholder>введите e-mail</placeholder>
+		<description>E-mail должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;E-mail&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;E-mail&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</email_textfield>
+
+	<submit_button>
+		<name>Зарегистрироваться</name>
+	</submit_button>
+
+	<about_mandatory_fields_note_text>
+		<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+	</about_mandatory_fields_note_text>
+</user_registration_form>
+<!--...USER REGISTRATION-->
+
+<!--USER MESSAGE ADDITING...-->
+<user_message_additing_form>
+	<form_name>Добавить сообщение</form_name>
+
+	<form_messages>
+		<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+		<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+		<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+		<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+		<failed_message>Добавить сообщение не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+		<success_message>Сообщение добавлено.</success_message>
+	</form_messages>
+
+	<user_name_textfield>
+		<name>Имя:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</user_name_textfield>
+
+	<message_textarea>
+		<name>Сообщение:</name>
+		<placeholder></placeholder>
+		<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+		<messages>
+			<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+			<illegal_chars_message></illegal_chars_message>
+			<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+		</messages>
+	</message_textarea>
+
+	<submit_button>
+		<name>Добавить</name>
+	</submit_button>
+
+	<about_mandatory_fields_note_text>
+		<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+	</about_mandatory_fields_note_text>
+</user_message_additing_form>
+<!--...USER MESSAGE ADDITING-->

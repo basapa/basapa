@@ -1,0 +1,16 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_site_description_info											{margin:0; text-align:center;}
+.css_site_description_info .css_header								{}
+.css_site_description_info .css_body								{margin:0;}
+.css_site_description_info .css_footer								{}
+
+/*COMPONENTS*/
+.css_site_description_info .css_text_component_title				{}
+.css_site_description_info .css_text_component_element_title		{}
+
+.css_site_description_info .css_text_component_description			{text-align:center;}
+.css_site_description_info .css_text_component_element_description	{font-size:18px;}

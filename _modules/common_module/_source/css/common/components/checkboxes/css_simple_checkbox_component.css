@@ -1,0 +1,14 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_simple_checkbox_component										{}
+.css_simple_checkbox_component .css_element							{}
+.css_simple_checkbox_component .css_caption							{}
+.css_simple_checkbox_component .css_description						{}
+.css_simple_checkbox_component .css_hint							{}
+
+/*INTERACTIONS*/
+.css_simple_checkbox_component a									{}
+.css_simple_checkbox_component a:hover								{}

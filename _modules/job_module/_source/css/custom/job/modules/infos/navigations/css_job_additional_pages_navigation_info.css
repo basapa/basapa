@@ -1,0 +1,23 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_additional_pages_navigation_info								{background:#5a7fa0;}
+.css_job_additional_pages_navigation_info .css_header					{}
+.css_job_additional_pages_navigation_info .css_body						{background:#5a7fa0; font-size:13px; text-shadow:#2b587a 0 1px 0; text-align:right;}
+.css_job_additional_pages_navigation_info .css_footer					{}
+
+/*COMPONENTS*/
+.css_job_additional_pages_navigation_info .css_labellist_component_01						{padding:0 5px;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01_element				{}
+
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_item				{border:none;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_enabled				{background:#5a7fa0; color:#e1e7ed;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_enabled a				{color:#e1e7ed; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_enabled a:hover		{background:#486e90; color:#e1e7ed;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_disabled				{background:#5a7fa0; color:#e1e7ed; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_selected				{background:#486e90; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+.css_job_additional_pages_navigation_info .css_labellist_component_01 .css_selected a				{color:#e1e7ed;}
+
+.css_job_additional_pages_navigation_info .css_element						{text-shadow:0 1px 0 #2b587a;}

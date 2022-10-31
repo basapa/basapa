@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--FILE TRANSLATION STATUS: COMPLETED (REQUIRED, IN_PROGRESS, COMPLETED)-->
+<!--FIELD MARKERS:--><!--NOT_TRANSLATED-->
+<!--ACCESS ERROR...-->
+<access_error_text_info>
+	<info_name>Ошибка доступа</info_name>
+</access_error_text_info>
+<!--...ACCESS ERROR-->
+
+<!--ACCESS PROHIBITION...-->
+<access_prohibition_text_info>
+	<info_name>Запрет доступа</info_name>
+</access_prohibition_text_info>
+<!--...ACCESS PROHIBITION-->
+
+<!--ACCESS REQUIREMENT...-->
+<access_requirement_text_info>
+	<info_name>Требование доступа</info_name>
+</access_requirement_text_info>
+<!--...ACCESS REQUIREMENT-->
+
+<!--ACCESS RESTRICTION...-->
+<access_restriction_text_info>
+	<info_name>Ограничение доступа</info_name>
+</access_restriction_text_info>
+<!--...ACCESS RESTRICTION-->
+
+<!--ERROR 403...-->
+<error_403_text_info>
+	<info_name>Ошибка 403</info_name>
+</error_403_text_info>
+<!--...ERROR 404-->
+
+<!--ERROR 404...-->
+<error_404_text_info>
+	<info_name>Ошибка 404</info_name>
+</error_404_text_info>
+<!--...ERROR 404-->
+
+<!--SITE CAPTION...-->
+<site_caption_info>
+	<info_name></info_name>
+
+	<caption_text>
+		<value>&SITE_NAME;</value>
+	</caption_text>
+</site_caption_info>
+<!--...SITE CAPTION-->
+
+<!--SITE COPYRIGHT...-->
+<site_copyright_info>
+	<info_name>&SITE_NAME;</info_name>
+
+	<description_text>
+		<value>© #YEAR_PLACEHOLDER# &site_name;</value>
+	</description_text>
+</site_copyright_info>
+<!--...SITE COPYRIGHT-->
+
+<!--SITE DESCRIPTION...-->
+<site_description_info>
+	<info_name>&SITE_NAME;</info_name>
+
+	<description_text>
+		<value></value>
+	</description_text>
+	
+	<support_button>
+		<name>Обратная связь</name>
+	</support_button>
+</site_description_info>
+<!--...SITE DESCRIPTION-->
+
+<!--SITE PRIVACY...-->
+<site_privacy_info>
+	<info_name></info_name>
+
+	<caption_text>
+		<value>Политика в отношении обработки персональных данных</value>
+	</caption_text>
+
+	<description_text>
+		<full_file_name>./resources/internals/translations/custom/#SITE_ID#/#LANG_ID#/texts/_privacy.txt</full_file_name>
+	</description_text>
+</site_privacy_info>
+<!--...SITE PRIVACY-->
+
+<!--EXTERNAL REDIRECT...-->
+<external_redirect_info>
+	<info_name>Переход к контенту</info_name>
+
+	<description_text>
+		<value>Вы перенаправляетесь к контенту. Пожалуйста, подождите...</value>
+	</description_text>
+
+	<help_text>
+		<value>При возникновении ошибки, Вы можете вернуться к &lt;a href="#HREF_PLACEHOLDER#"&gt;результатам поиска&lt;/a&gt;</value>
+	</help_text>
+</external_redirect_info>
+<!--...EXTERNAL REDIRECT-->
+
+<navigations>
+	<!--CONTENT NAVIGATION...-->
+	<content_navigation_info>
+		<info_name>Навигация контента</info_name>
+
+		<content_labellist>
+			<name></name>
+			<items>
+				<item id="prev">Предыдущая</item>
+				<item id="next">Следующая</item>
+			</items>
+		</content_labellist>
+	</content_navigation_info>
+	<!--...CONTENT NAVIGATION-->
+</navigations>

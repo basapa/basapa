@@ -1,0 +1,13 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_contents_management_form							{}
+.css_job_contents_management_form .css_header				{}
+.css_job_contents_management_form .css_body					{}
+.css_job_contents_management_form .css_footer				{}
+
+/*COMPONENTS*/
+.css_job_contents_management_form .css_text_component_form_name						{}
+.css_job_contents_management_form .css_text_component_element_form_name				{color:#eeeeee; font-size:15px; font-weight:bold;}

@@ -1,0 +1,8 @@
+/*
+IMPORT_PRIORITY:9
+*/
+
+/*COMMON*/
+.css_info_component .css_name								{display:inline-block; background:#ff00ff; color:#194261; padding:16px 6px; text-align:left;}
+.css_info_component .css_pre_name							{display:inline-block; background:#ff00ff; color:#194261; padding:16px 6px; text-align:left;}
+.css_info_component .css_post_name							{display:inline-block; background:#ff00ff; color:#194261; padding:16px 6px; text-align:right;}

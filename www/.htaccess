@@ -1,0 +1,90 @@
+RewriteRule .htaccess - [F]
+
+AddDefaultCharset utf-8
+
+RewriteEngine on
+Options +FollowSymlinks
+Options All -Indexes
+RewriteBase /
+
+#DELIVERY MODE...
+#RewriteCond %{REMOTE_ADDR} !127.0.0.4
+#RewriteCond %{REQUEST_URI} !error_503
+#RewriteRule ^(.*)$ /resources/internals/htmls/common/error_503.html [L,R=503]
+#...DELIVERY MODE
+
+#RESOURCES CACHE...
+<FilesMatch "\.(png|jpg|jpeg|gif|xml|txt|ico|html)$">
+	Header set Cache-Control "public, proxy-revalidate, must-revalidate, max-age=0"
+</FilesMatch>
+
+#local resources
+<FilesMatch "^(robots\.txt|sitemaps\.xml|(.*)sitemap\.xml|favicon\.ico|apple(.*)\.png|_(.*)\.(png|jpg|jpeg|gif|xml|txt|ico|html)|__(.*)\.(otf|ttf))$">
+	Header set Cache-Control "public, proxy-revalidate, must-revalidate, max-age=0"
+</FilesMatch>
+
+<FilesMatch "\.(js|css)$">
+	Header set Cache-Control "public, proxy-revalidate, must-revalidate, max-age=0"
+</FilesMatch>
+
+<FilesMatch "\.(php)$">
+	Header set Cache-Control "public, proxy-revalidate, must-revalidate, max-age=0"
+</FilesMatch>
+#...RESOURCES CACHE
+
+#RESOURCES TYPES...
+	AddType font/otf .otf
+	AddType font/ttf .ttf
+#...RESOURCES TYPES
+
+#RESOURCES GZIP/DEFLATE...
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+	AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/javascript application/x-javascript
+	AddOutputFilterByType DEFLATE font/otf font/ttf
+#...RESOURCES GZIP/DEFLATE
+
+#lowercase host
+#RewriteCond %{HTTP_HOST} [A-Z]
+#RewriteRule ^(.*)$ ${lc:$1} [L,R=301]
+
+#redirect from www.host
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+#redirect to backslash url
+RewriteCond %{REQUEST_URI} !^((.*)\.(.*))
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [L,R=301]
+
+#subdomain redirect
+#RewriteCond %{HTTP_HOST} ^sub\.basapa\.ru$
+#RewriteCond %{REQUEST_URI} !/sub/
+#RewriteRule ^(.*)$ /sub/$1 [L]
+
+#entry point
+RewriteCond %{REQUEST_URI} !^((.*)\.(.*))
+RewriteRule ^(.*)$ index\.php/$1 [L,QSA]
+
+#for cron
+#RewriteRule ^index\.php/(request)/(account|admin)/([^/]+)/?$ index\.php/?%{QUERY_STRING}&site=$1&page=$2&subpage=$3 [L]
+
+#protection against bots
+#RewriteCond %{HTTP_USER_AGENT} AhrefsBot
+#RewriteRule .* - [L,F]
+
+#protection against the use of resources from outside
+#RewriteCond %{HTTP_REFERER} ^$ [OR]
+#RewriteCond %{HTTP_REFERER} !^.*basapa\.loc.*$
+#RewriteCond %{HTTP_REFERER} !^basapa\.ru.*$
+#RewriteRule .*\.(gif|jpg|png)$ http://basapa\.ru/internals/resources/image/caption\.gif [R]
+
+#access denied in time
+#RewriteCond %{TIME_HOUR}%{TIME_MIN} >0700
+#RewriteCond %{TIME_HOUR}%{TIME_MIN} <2400
+#RewriteRule .* - [F]
+
+#ERROR...
+ErrorDocument 403 /resources/internals/htmls/common/_error_403.html
+ErrorDocument 404 /resources/internals/htmls/common/_error_404.html
+ErrorDocument 503 /resources/internals/htmls/common/_error_503.html
+#...ERROR

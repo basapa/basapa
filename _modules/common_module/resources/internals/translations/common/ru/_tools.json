@@ -1,0 +1,27 @@
+{
+	"date_time": {
+		"days_of_the_week": [
+			{"name": "понедельник"},
+			{"name": "вторник"},
+			{"name": "среда"},
+			{"name": "четверг"},
+			{"name": "пятница"},
+			{"name": "суббота"},
+			{"name": "воскресенье"}
+		],
+		"mounths": [
+			{"name": "январь", "as_date_part": "января"},
+			{"name": "февраль", "as_date_part": "февраля"},
+			{"name": "март", "as_date_part": "марта"},
+			{"name": "апрель", "as_date_part": "апреля"},
+			{"name": "май", "as_date_part": "мая"},
+			{"name": "июнь", "as_date_part": "июня"},
+			{"name": "июль", "as_date_part": "июля"},
+			{"name": "август", "as_date_part": "августа"},
+			{"name": "сентябрь", "as_date_part": "сентября"},
+			{"name": "октябрь", "as_date_part": "октября"},
+			{"name": "ноябрь", "as_date_part": "ноября"},
+			{"name": "декабрь", "as_date_part": "декабря"}
+		]
+    }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--FILE TRANSLATION STATUS: COMPLETED (REQUIRED, IN_PROGRESS, COMPLETED)-->
+<!--FIELD MARKERS:--><!--NOT_TRANSLATED-->
+<access_error_page>
+	<title>&SITE_NAME; - Ошибка доступа</title>
+	<meta_keywords>ошибка доступа</meta_keywords>
+	<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+</access_error_page>
+
+<access_prohibition_page>
+	<title>&SITE_NAME; - Запрет доступа</title>
+	<meta_keywords>запрет доступа</meta_keywords>
+	<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+</access_prohibition_page>
+
+<access_requirement_page>
+	<title>&SITE_NAME; - Требование доступа</title>
+	<meta_keywords>требование доступа</meta_keywords>
+	<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+</access_requirement_page>
+
+<access_restriction_page>
+	<title>&SITE_NAME; - Ограничение доступа</title>
+	<meta_keywords>ограничение доступа</meta_keywords>
+	<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+</access_restriction_page>
+
+<debug_page>
+	<title></title>
+	<meta_keywords></meta_keywords>
+	<meta_description></meta_description>
+</debug_page>
+
+<error_403_page>
+	<title>&SITE_NAME; - Ошибка 403</title>
+	<meta_keywords>ошибка 403</meta_keywords>
+	<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+</error_403_page>
+
+<error_404_page>
+	<title>&SITE_NAME; - Ошибка 404</title>
+	<meta_keywords>ошибка 404</meta_keywords>
+	<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+</error_404_page>
+
+<main_page>
+	<title>&SITE_NAME; - Главная</title>
+	<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+	<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+</main_page>
+
+<payment_page>
+	<title>&SITE_NAME; - Оплата</title>
+	<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+	<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+</payment_page>
+
+<support_page>
+	<title>&SITE_NAME; - Тех. поддержка</title>
+	<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+	<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+</support_page>
+
+<user_registration_page>
+	<title>&SITE_NAME; - Регистрация пользователя</title>
+	<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+	<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+</user_registration_page>
+
+<user_authorization_page>
+	<title>&SITE_NAME; - Авторизация пользователя</title>
+	<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+	<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+</user_authorization_page>
+
+<external_redirect_page>
+	<title>&SITE_NAME; - Внешнее перенаправление</title>
+	<meta_keywords>внешнее перенаправление</meta_keywords>
+	<meta_description>внешнее перенаправление</meta_description>
+</external_redirect_page>

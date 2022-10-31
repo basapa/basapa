@@ -1,0 +1,13 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_support_form_dialog											{}
+.css_support_form_dialog .css_header								{}
+.css_support_form_dialog .css_body									{}
+.css_support_form_dialog .css_footer								{}
+
+/*COMPONENTS*/
+/*.css_form_dialog .css_text_component_form_name								{}
+.css_form_dialog .css_text_component_element_form_name								{color:#707070; font-size:14px; font-weight:bold;}*/

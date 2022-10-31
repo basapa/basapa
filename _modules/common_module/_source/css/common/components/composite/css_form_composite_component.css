@@ -1,0 +1,10 @@
+/*
+IMPORT_PRIORITY:7
+*/
+
+/*COMMON*/
+.css_form_composite_component							{}
+.css_form_composite_component .css_name					{width:200px;}
+.css_form_composite_component .css_caption				{}
+.css_form_composite_component .css_description			{}
+.css_form_composite_component .css_hint					{}

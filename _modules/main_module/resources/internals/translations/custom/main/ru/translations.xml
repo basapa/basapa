@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TRANSLATION STATUS: COMPLETED (REQUIRED, IN_PROGRESS, COMPLETED) -->
+<translations>
+	<pages>
+		<main_page>
+			<title> | BASAPA.RU Бесплатные объявления</title>
+			<meta_keywords>работа, вакансии, резюме, поиск вакансий, поиск резюме, поиск работы, ищу работу</meta_keywords>
+			<meta_description>Работа в городах России и зарубежья. Вакансии и резюме.</meta_description>
+		</main_page>
+	</pages>
+
+	<forms>
+		<login_form>
+			<form_name>Логин</form_name>
+
+			<form_messages>
+				<empty_mandatory_fields_message>Вы заполнили не все обязательные поля.</empty_mandatory_fields_message>
+			</form_messages>
+
+			<login_textfield>
+				<caption>Логин:</caption>
+			</login_textfield>
+
+			<password_textfield>
+				<caption>Пароль:</caption>
+			</password_textfield>
+
+			<remember_me_checkbox>
+				<post_name>Запомнить меня</post_name>
+			</remember_me_checkbox>
+
+			<registration_text>
+				<value>Зарегистрироваться</value>
+			</registration_text>
+
+			<recovery_password_text>
+				<value>Забыли пароль?</value>
+			</recovery_password_text>
+
+			<submit_button>
+				<name>Войти</name>
+			</submit_button>
+		</login_form>
+
+		
+		<authorization_form>
+			<form_name>Авторизация</form_name>
+
+			<login_textfield>
+				<name>Логин:</name>
+				<description>Логин должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+			</login_textfield>
+
+			<password_textfield>
+				<name>Пароль:</name>
+				<description>Пароль должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+			</password_textfield>
+
+			<remember_me_checkbox>
+				<post_name>Запомнить меня</post_name>
+			</remember_me_checkbox>
+
+			<submit_button>
+				<name>Войти</name>
+			</submit_button>
+		</authorization_form>
+
+		<!--REGISTRATION...-->
+		<registration_form>
+			<form_name>Регистрация</form_name>
+
+			<form_messages>
+				<empty_mandatory_fields_message>Вы заполнили не все обязательные поля.</empty_mandatory_fields_message>
+				<user_already_exist_message>Пользователь с таким именем уже существует.</user_already_exist_message>
+				<login_data_empty_message>Вы не заполнили поле &lt;b&gt;Логин&lt;/b&gt;.</login_data_empty_message>
+			</form_messages>
+
+			<login_textfield>
+				<name>Логин:</name>
+				<description>Логин должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+				<messages>
+					<illegal_chars_message>Вы использовали запрещенные символы для поля &lt;b&gt;Логин&lt;/b&gt;, которые нельзя вводить.&lt;br/&gt;Разрешено вводить латинские буквы от &lt;b&gt;A&lt;/b&gt; до &lt;b&gt;Z&lt;/b&gt;, а также цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;_&lt;/b&gt;</illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;Логин&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</login_textfield>
+
+			<password_textfield>
+				<name>Пароль:</name>
+				<description>Пароль должен содержать не менее #MIN_CHARS_COUNT# символов.</description>
+				<messages>
+					<illegal_chars_message>Вы использовали запрещенные символы для поля &lt;b&gt;Пароль&lt;/b&gt;, которые нельзя вводить.&lt;br/&gt;Разрешено вводить латинские буквы от &lt;b&gt;A&lt;/b&gt; до &lt;b&gt;Z&lt;/b&gt;, а также цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;_&lt;/b&gt;</illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;Пароль&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</password_textfield>
+
+			<repeat_password_textfield>
+				<name>Повторите пароль:</name>
+				<description>Пароли должны полностью совпадать.</description>
+				<messages>
+					<illegal_chars_message>Вы использовали запрещенные символы для поля &lt;b&gt;Повторите пароль&lt;/b&gt;, которые нельзя вводить.&lt;br/&gt;Разрешено вводить латинские буквы от &lt;b&gt;A&lt;/b&gt; до &lt;b&gt;Z&lt;/b&gt;, а также цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;_&lt;/b&gt;</illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;Повторите пароль&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</repeat_password_textfield>
+
+			<email_textfield>
+				<name>E-mail:</name>
+				<description>Почтовый адрес открыто не публикуется и используется только в служебных целях, например при восстановлении пароля или подтверждении регистрации.</description>
+				<messages>
+					<illegal_chars_message>В поле &lt;b&gt;E-mail&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</illegal_chars_message>
+					<wrong_chars_count_message>В поле &lt;b&gt;E-mail&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</wrong_chars_count_message>
+				</messages>
+			</email_textfield>
+
+			<submit_button>
+				<name>Зарегистрировать</name>
+			</submit_button>
+		</registration_form>
+		<!--...REGISTRATION-->
+	</forms>
+
+	<infos>
+		<messages>
+			<access_requirement_message>
+				<message_name>Доступ на сайт невозможен</message_name>
+			</access_requirement_message>
+			
+			<access_restriction_message>
+				<message_name>Доступ на сайт ограничен</message_name>
+			</access_restriction_message>
+			
+			<access_error_message>
+				<message_name>Доступ на сайт временно невозможен</message_name>
+			</access_error_message>
+			
+			<access_prohibition_message>
+				<message_name>Доступ на сайт запрещен</message_name>
+			</access_prohibition_message>
+			
+			<error_403_message>
+				<message_name>Ошибка 403</message_name>
+			</error_403_message>
+			
+			<error_404_message>
+				<message_name>Ошибка 404</message_name>
+			</error_404_message>
+		</messages>
+	</infos>
+</translations>

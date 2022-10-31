@@ -1,0 +1,24 @@
+<?php
+
+
+namespace basapa_ns;
+
+
+final class CSelectCategoriesCompositeComponent extends CCompositeComponentBase
+{
+	/***************************************************
+	 * INTERFACE
+	 */
+	
+	/*
+	 * INTERFACE
+	 ***************************************************/
+	 
+	
+	protected function __draw()
+	{
+	}
+}
+
+
+?>

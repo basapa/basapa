@@ -1,0 +1,26 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_authorization_form											{}
+.css_authorization_form .css_header								{}
+.css_authorization_form .css_body								{}
+.css_authorization_form .css_footer								{}
+
+/*COMPONENTS*/
+/*login*/
+.css_authorization_form .css_textfield_component_01				{}
+.css_authorization_form .css_textfield_component_01_element		{width:150px;}
+
+/*password*/
+.css_authorization_form .css_textfield_component_02				{}
+.css_authorization_form .css_textfield_component_02_element		{width:150px;}
+
+/*remember me*/
+.css_authorization_form .css_checkbox_component_01				{display:inline-block; padding:0 2px 0 212px;}
+.css_authorization_form .css_checkbox_component_01_element		{}
+
+/*submit*/
+.css_authorization_form .css_button_component_01				{display:inline-block;}
+.css_authorization_form .css_button_component_01_element		{}

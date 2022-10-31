@@ -1,0 +1,347 @@
+<?php
+
+
+//include_once(ROOT_PHP_DIRECTORY. 'viewManager/view/modules/forms/custom/job/CJOBRParentForm.php');
+
+
+class CJOBREditAdminContentStateForm //extends CJOBRParentForm
+{
+	private $_fContentData_arr;
+
+	private $_fContentsStatesDescriptions_arr;
+
+
+	/***************************************************
+	 * PUBLIC
+	 */
+
+
+	public function draw($aContentData_arr)
+	{
+		if (!isset($aContentData_arr))
+		{
+			return;
+		}
+
+		$this->_fContentData_arr = $aContentData_arr;
+
+		$this->__draw();
+	}
+
+
+	/*
+	 * PUBLIC
+	 ***************************************************/
+
+
+	protected function __init()
+	{
+		parent::__init();
+
+		$lVacancyStatesDescriptions = array(CControlParamConst::CONTENT_STATE_MODERATION_WAITING 			=> 'Проверяется',
+											CControlParamConst::CONTENT_STATE_REPEAT_MODERATION_WAITING 	=> 'Проверяется повторно',
+											CControlParamConst::CONTENT_STATE_ACTIVATED 					=> 'Активна',
+											CControlParamConst::CONTENT_STATE_DEACTIVATED 					=> 'Неактивна',
+											CControlParamConst::CONTENT_STATE_BLOCKED 						=> 'Заблокирована',
+											CControlParamConst::CONTENT_STATE_DELETED 						=> 'Удалена',
+											CControlParamConst::CONTENT_STATE_DELETION_WAITING 				=> 'Истекла',
+											CControlParamConst::CONTENT_STATE_BANNED 						=> 'Забанена');
+
+		$lRezumeStatesDescriptions 	= array(CControlParamConst::CONTENT_STATE_MODERATION_WAITING 			=> 'Проверяется',
+											CControlParamConst::CONTENT_STATE_REPEAT_MODERATION_WAITING 	=> 'Проверяется повторно',
+											CControlParamConst::CONTENT_STATE_ACTIVATED 					=> 'Активно',
+											CControlParamConst::CONTENT_STATE_DEACTIVATED 					=> 'Неактивно',
+											CControlParamConst::CONTENT_STATE_BLOCKED 						=> 'Заблокировано',
+											CControlParamConst::CONTENT_STATE_DELETED 						=> 'Удалено',
+											CControlParamConst::CONTENT_STATE_DELETION_WAITING 				=> 'Истекло',
+											CControlParamConst::CONTENT_STATE_BANNED 						=> 'Забанено');
+
+		$lCompanyStatesDescriptions = $lVacancyStatesDescriptions;
+		$lAdvertisementStatesDescriptions = $lRezumeStatesDescriptions;
+
+		$this->_fContentsStatesDescriptions_arr = array(CContentConst::TYPE_JOB_VACANCY 		=> $lVacancyStatesDescriptions,
+														CContentConst::TYPE_JOB_REZUME 			=> $lRezumeStatesDescriptions,
+														CContentConst::TYPE_JOB_COMPANY 		=> $lCompanyStatesDescriptions,
+														CContentConst::TYPE_JOB_ADVERTISEMENT 	=> $lAdvertisementStatesDescriptions);
+	}
+
+
+	protected function __draw()
+	{
+		echo
+		'<div class="module_form edit_content_state_JOB_form" id="' .$this->__id(). '" style="padding-top:0;">',
+			$this->__module(),
+		'</div>';
+	}
+
+
+	protected function __id()
+	{
+		return CJOBRTransmitConst::FORM_EDIT_USER_CONTENT_STATE_FORM;
+	}
+
+
+	protected function __action()
+	{
+		$lSubpage_str = $this->__data()->param(CParamConst::SUBPAGE);
+
+		$lStaticParams_arr	= array(CParamConst::SITE		=> CSiteConst::SITE_JOB,
+									CParamConst::PAGE		=> CPageConst::PAGE_JOB_ADMIN,
+									CParamConst::SUBPAGE	=> $lSubpage_str);
+		return CUrlConversion::getRealUrlByParams($lStaticParams_arr);
+	}
+
+
+	protected function __header()
+	{
+	}
+
+
+	protected function __bodyContent()
+	{
+		$this->__elements();
+	}
+
+
+	protected function __footerContent()
+	{
+		//hidden
+		$lParams_arr 	= array(CComponentParam::TEXTFIELD_ID				=> CJOBRFieldIdConst::FORM_EDIT_USER_CONTENT_STATE_HIDDEN,
+								CComponentParam::TEXTFIELD_TRANSMIT			=> CJOBRTransmitConst::FORM_EDIT_USER_CONTENT_STATE_HIDDEN,
+								CComponentParam::TEXTFIELD_VALUE 			=> $this->__hostData()->cookie(CMainConst::COOKIE_ANTI_SPAM),
+								CComponentParam::TEXTFIELD_NUM_CHARS 		=> CFieldLengthConst::HIDDEN,
+								CComponentParam::TEXTFIELD_TYPE 			=> CTextField::TYPE_HIDDEN,
+								CComponentParam::TEXTFIELD_STYLE 			=> 'padding:0;');
+		$this->__components()->textfield()->draw($lParams_arr);
+
+		//button
+		$lParams_arr 	= array(CComponentParam::BUTTON_ID 					=> CRequestConst::REQUEST_EDIT_ADMIN_CONTENT_STATE,
+								CComponentParam::BUTTON_NAME 				=> CFieldNameConst::BUTTON_APPLY,
+								CComponentParam::BUTTON_TYPE 				=> CButton::TYPE_SUBMIT_WITH_PROGRESS_BAR,
+								CComponentParam::BUTTON_COLOR 				=> CButton::COLOR_BLUE,
+								CComponentParam::BUTTON_STYLE 				=> 'display:inline-block;');
+		$this->__components()->button()->draw($lParams_arr);
+	}
+
+
+	protected function __elementsContent()
+	{
+		//contents info
+		$lContentData_arr = $this->_fContentData_arr;
+
+		$this->__components()->separator('border-top:#a5c1dd dashed 1px;');
+
+		foreach ($lContentData_arr as $lData_obj)
+		{
+			$this->__element($lData_obj);
+
+			$this->__components()->separator('border-top:#a5c1dd dashed 1px;');
+		}
+	}
+
+
+	protected function __elementContent($aElement_obj)
+	{
+		$lContentData_arr = $aElement_obj;
+
+		$lStyle_str = 'display:inline-block; vertical-align:top; padding:2px 6px;';
+
+		//id
+		$lId_int = $lContentData_arr[CDatabaseConst::COMMON_TABLE_ID];
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> $lId_int,
+								CComponentParam::TEXT_TYPE					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_STYLE					=> 'width:50px;' .$lStyle_str,
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#444444;');
+		$this->__components()->text()->draw($lParams_arr);
+
+		//hidden id
+		$lTransmit_str = CJOBRTransmitConst::FORM_EDIT_USER_CONTENT_STATE_ID. '[]';
+		$lParams_arr 	= array(CComponentParam::TEXTFIELD_TRANSMIT 		=> $lTransmit_str,
+								CComponentParam::TEXTFIELD_VALUE	 		=> $lId_int,
+								CComponentParam::TEXTFIELD_NUM_CHARS 		=> CFieldLengthConst::ID,
+								CComponentParam::TEXTFIELD_TYPE 			=> CTextField::TYPE_HIDDEN,
+								CComponentParam::TEXTFIELD_STYLE			=> 'display:none; padding:0;');
+		$this->__components()->textfield()->draw($lParams_arr);
+
+		//state
+		$lContentType_int = $this->__data()->contentType();
+		$lStatesDescriptionsByContent_arr = $this->_fContentsStatesDescriptions_arr[$lContentType_int];
+		$lState_int = $lContentData_arr[CDatabaseConst::COMMON_TABLE_STATE];
+
+		$lComponentStyle_str = '';
+		$lName_str = '';
+		$lHint_str = $lStatesDescriptionsByContent_arr[$lState_int];
+		switch ($lState_int)
+		{
+			case CControlParamConst::CONTENT_STATE_ACTIVATED:
+			{
+				$lComponentStyle_str = 'background:#e8ffc8; border:#cdeeb0 solid 1px; color:#a5d95b;';
+				$lName_str = 'А';
+			}break;
+
+
+			case CControlParamConst::CONTENT_STATE_MODERATION_WAITING:
+			case CControlParamConst::CONTENT_STATE_REPEAT_MODERATION_WAITING:
+			{
+				$lComponentStyle_str = 'background:#fffac8; border:#eeeab0 solid 1px; color:#d9d25b;';
+				$lName_str = 'П';
+			}break;
+
+
+			case CControlParamConst::CONTENT_STATE_DEACTIVATED:
+			{
+				$lComponentStyle_str = 'background:#ededed; border:#d6d6d6 solid 1px; color:#888888;';
+				$lName_str = 'Н';
+			}break;
+
+
+			case CControlParamConst::CONTENT_STATE_BLOCKED:
+			{
+				$lComponentStyle_str = 'background:#ededed; border:#d6d6d6 solid 1px; color:#888888;';
+				$lName_str = 'З';
+			}break;
+
+
+			case CControlParamConst::CONTENT_STATE_BANNED:
+			{
+				$lComponentStyle_str = 'background:#fbe3e3; border:#f6c8c8 solid 1px; color:#e76d6d;';
+				$lName_str = 'Б';
+			}break;
+
+
+			case CControlParamConst::CONTENT_STATE_DELETED:
+			{
+				$lComponentStyle_str = 'background:#fbe3e3; border:#f6c8c8 solid 1px; color:#e76d6d;';
+				$lName_str = 'У';
+			}break;
+
+
+			case CControlParamConst::CONTENT_STATE_DELETION_WAITING:
+			{
+				$lComponentStyle_str = 'background:#ededed; border:#d6d6d6 solid 1px; color:#888888;';
+				$lName_str = 'И';
+			}break;
+		}
+
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> $lName_str,
+								CComponentParam::TEXT_TYPE 					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_HINT 					=> $lHint_str,
+								CComponentParam::TEXT_STYLE 				=> 'width:80px;' .$lStyle_str,
+								CComponentParam::TEXT_STYLE_COMPONENT		=> 'display:inline; font-weight:bold; padding:0 4px; text-decoration:none;' .$lComponentStyle_str);
+		$this->__components()->text()->draw($lParams_arr);
+
+		//released time
+		$lReleaseTime_int = $lContentData_arr[CDatabaseConst::COMMON_TABLE_RELEASE_TIME];
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> CTools::convertDate($lReleaseTime_int, false),
+								CComponentParam::TEXT_TYPE					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_STYLE					=> 'width:80px;' .$lStyle_str,
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#444444;');
+		$this->__components()->text()->draw($lParams_arr);
+
+		//updated time
+		$lUpdateTime_int = $lContentData_arr[CDatabaseConst::COMMON_TABLE_UPDATING_TIME];
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> $lUpdateTime_int > 0 ? CTools::convertDate($lUpdateTime_int, false) : '----------',
+								CComponentParam::TEXT_TYPE					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_STYLE					=> 'width:80px;' .$lStyle_str,
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#444444;');
+		$this->__components()->text()->draw($lParams_arr);
+
+		//expired time
+		$lExpireTime_int = $lContentData_arr[CDatabaseConst::COMMON_TABLE_EXPIRING_TIME];
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> CTools::convertDate($lExpireTime_int, false),
+								CComponentParam::TEXT_TYPE					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_STYLE					=> 'width:80px;' .$lStyle_str,
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#444444;');
+		$this->__components()->text()->draw($lParams_arr);
+
+		//name
+		$lCityData_arr_arr = $this->__databaseData()->cityData(CDatabaseData::TYPE_CITY_DATA);
+		$lCityId_int = $lContentData_arr[CDatabaseConst::COMMON_TABLE_CITY_ID];
+		$lCityName_str = $lCityData_arr_arr[$lCityId_int][CDatabaseConst::TABLE_CITY_NAME];
+
+		$lDescription_str = '(г. ' .$lCityName_str. ')<br>';
+
+		switch ($lContentType_int)
+		{
+			case CContentConst::TYPE_JOB_VACANCY:
+			{
+				$lDescription_str .= CTools::substr($lContentData_arr[CJOBRDatabaseConst::TABLE_JOB_TERMS], CFieldLengthConst::MAX_DESCRIPTION_VERY_SHORT);
+			}break;
+
+
+			case CContentConst::TYPE_JOB_REZUME:
+			{
+				$lDescription_str .= CTools::substr($lContentData_arr[CJOBRDatabaseConst::TABLE_USERBAR_SKILLS], CFieldLengthConst::MAX_DESCRIPTION_VERY_SHORT);
+			}break;
+
+
+			case CContentConst::TYPE_JOB_COMPANY:
+			{
+				$lDescription_str .= CTools::substr($lContentData_arr[CJOBRDatabaseConst::TABLE_COMPANY_DESCRIPTION], CFieldLengthConst::MAX_DESCRIPTION_VERY_SHORT);
+			}break;
+
+
+			case CContentConst::TYPE_JOB_ADVERTISEMENT:
+			{
+				$lDescription_str .= CTools::substr($lContentData_arr[CJOBRDatabaseConst::TABLE_ADVERTISEMENT_DESCRIPTION], CFieldLengthConst::MAX_DESCRIPTION_VERY_SHORT);
+			}break;
+		}
+
+		$lName_str = $lContentData_arr[CDatabaseConst::COMMON_TABLE_NAME]. '<br><span style="font-weight:normal;">' . $lDescription_str. '</span>';
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> $lName_str,
+								CComponentParam::TEXT_TYPE					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_STYLE					=> 'width:200px;' .$lStyle_str,
+								CComponentParam::TEXT_STYLE_COMPONENT 		=> 'font-weight:bold; color:#444444;');
+		$this->__components()->text()->draw($lParams_arr);
+
+		//actions
+		$lContentStateListBoxData_arr = $this->__componentCustomData()->adminContentStateListBoxData();
+		$lElements_arr = CTools::updateComponentElement($lContentStateListBoxData_arr, CComponentParam::ELEMENT_PARAM_VALUE, $lState_int, CValueTransmitConst::COMMON_NOT_SELECTED);
+
+		$lTransmit_str = CJOBRTransmitConst::FORM_EDIT_USER_CONTENT_STATE_ACTION. '[]';
+		$lParams_arr 	= array(CComponentParam::LISTBOX_TRANSMIT 			=> $lTransmit_str,
+								CComponentParam::LISTBOX_PLACEHOLDER 		=> CFieldPlaceholderConst::PLACEHOLDER_SELECT,
+								CComponentParam::LISTBOX_VALUE	 			=> CValueTransmitConst::COMMON_UNKNOWN,
+								CComponentParam::LISTBOX_ELEMENTS 			=> $lElements_arr,
+								CComponentParam::LISTBOX_STYLE				=> $lStyle_str,
+								CComponentParam::LISTBOX_STYLE_COMPONENT 	=> 'width:120px;');
+		$this->__components()->listbox()->draw($lParams_arr);
+
+		//labellist controls
+		$lElements_arr = null;
+
+		$lSeo_str = $lContentData_arr[CDatabaseConst::COMMON_TABLE_URL_NAME];
+		$lSubpage_str = $this->__data()->param(CParamConst::SUBPAGE);
+
+		if ($this->__data()->contentType() != CContentConst::TYPE_JOB_ADVERTISEMENT)
+		{
+			$lElements_arr[] 	= array(CComponentParam::ELEMENT_PARAM_NAME 	=> CNameActionConst::ACTION_VIEW,
+										CComponentParam::ELEMENT_PARAM_HREF 	=> CUrlConversion::getRealUrl(CSiteConst::SITE_JOB, $lSubpage_str, CSubpageConst::SUBPAGE_NONE, CActionConst::ACTION_VIEW, $lId_int, $lSeo_str),
+										CComponentParam::ELEMENT_PARAM_STATE 	=> CComponentParam::ELEMENT_STATE_ENABLED);
+		}
+
+		$lElements_arr[] 	= array(CComponentParam::ELEMENT_PARAM_NAME 	=> CNameActionConst::ACTION_EDIT,
+									CComponentParam::ELEMENT_PARAM_HREF 	=> CUrlConversion::getRealUrl(CSiteConst::SITE_JOB, $lSubpage_str, CSubpageConst::SUBPAGE_NONE, CActionConst::ACTION_EDIT, $lId_int, $lSeo_str),
+									CComponentParam::ELEMENT_PARAM_STATE 	=> CComponentParam::ELEMENT_STATE_ENABLED);
+
+		$lParams_arr	= array(CComponentParam::LABELLIST_TYPE				=> CLabelList::TYPE_NAVIGATION_MENU,
+								CComponentParam::LABELLIST_ELEMENTS 		=> $lElements_arr,
+								CComponentParam::LABELLIST_CLASS			 => 'hidden',
+								CComponentParam::LABELLIST_STYLE_COMPONENT 	=> 'text-align:left; font-size:10px;');
+		$this->__components()->labellist()->draw($lParams_arr);
+
+		//text controls
+		$lUserId_int = $lContentData_arr[CJOBRDatabaseConst::TABLE_JOB_USER_ID];
+		$lHint_str = 'Пользователь: №' .$lUserId_int;
+
+		$lParams_arr 	= array(CComponentParam::TEXT_NAME 					=> 'Подробная информация',
+								CComponentParam::TEXT_TYPE 					=> CText::TYPE_LOW,
+								CComponentParam::TEXT_HINT 					=> $lHint_str,
+								CComponentParam::TEXT_STYLE 				=> 'width:160px; display:inline-block; vertical-align:top; padding:2px 6px;',
+								CComponentParam::TEXT_STYLE_COMPONENT		=> 'display:inline; font-weight:bold; padding:0 4px; text-decoration:none; background:#dcecfa; border:#a5c1dd solid 1px; color:#446b8f;');
+		$this->__components()->text()->draw($lParams_arr);
+	}
+}
+
+
+?>

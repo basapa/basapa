@@ -1,0 +1,16 @@
+/*
+IMPORT_PRIORITY:0
+*/
+.css_job_administration_page									{background-color:#f7fbff;}
+
+/*SECTIONS*/
+.css_job_administration_page .css_page_section					{background:none; border:none;}
+.css_job_administration_page .css_header_section				{}
+.css_job_administration_page .css_page_left_section				{}
+.css_job_administration_page .css_page_right_section			{}
+.css_job_administration_page .css_page_pre_content_section		{}
+.css_job_administration_page .css_page_content_section			{margin:0;}
+.css_job_administration_page .css_page_post_content_section		{}
+.css_job_administration_page .css_page_footer_section			{}
+.css_job_administration_page .css_page_float_left_section		{}
+.css_job_administration_page .css_page_float_right_section		{}

@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_success_message_info								{background:#e8ffc8; border:#cdeeb0 solid 1px;}
+.css_success_message_info .css_header					{}
+.css_success_message_info .css_body						{background:#f9fef1;}
+.css_success_message_info .css_footer					{}
+
+/*INTERACTIONS*/
+/*.css_success_message_info .css_close_button				{background-position: -15px 0;}
+.css_success_message_info .css_close_button:hover		{background-position: -15px -15px;}*/
+
+/*COMPONENTS*/
+.css_success_message_info .css_text_component_message_title						{}
+.css_success_message_info .css_text_component_element_message_title				{color:#a5d95b;}

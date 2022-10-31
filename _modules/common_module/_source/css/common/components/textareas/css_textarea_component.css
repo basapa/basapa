@@ -1,0 +1,27 @@
+/*
+IMPORT_PRIORITY:7
+*/
+
+/*COMMON*/
+.css_textarea_component									{text-align:left;}
+.css_textarea_component .css_element					{border:#cccccc solid 1px; width:350px; height:150px; min-width:200px; max-width:350px; resize:none; vertical-align:top;/*hack: removes unknown bottom offset*/}
+.css_textarea_component .css_caption					{margin-left:208px;}
+.css_textarea_component .css_description				{margin-left:208px;}
+.css_textarea_component .css_hint						{margin-left:208px;}
+.css_textarea_component .css_name						{width:200px; height:150px; vertical-align:top;}
+.css_textarea_component .css_pre_name					{}
+.css_textarea_component .css_post_name					{}
+
+/*INTERACTIONS*/
+.css_textarea_component a								{}
+.css_textarea_component a:hover							{}
+
+.css_textarea_component .css_element:hover				{background:white; color:black;}
+.css_textarea_component .css_element:focus				{background:white; color:black;}
+
+.css_textarea_component label:hover .css_element		{background:white; color:black;}
+
+/*CUSTOM*/
+.css_textarea_component .css_locking_element			{display:none;}
+/*.css_textfield_component_base .css_disabled .css_locking_element	{display:block;}
+.css_textfield_component_base .css_disabled .css_element			{border:#565656 solid 1px; background:#dedede; color:#424242;}*/

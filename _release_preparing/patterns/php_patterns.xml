@@ -1,0 +1,62 @@
+<patterns>
+
+	<replace value="^CC[A-Z]{1,4}[a-z].*" comment="common classes"/>
+	<replace value="^C[A-Z]{1,4}[a-z].*" comment="main classes"/>
+	<replace value="^I[A-Z]{1,4}[a-z].*" comment="common interfaces"/>
+	<replace value="^CJOB[A-Z]{1,4}[a-z].*" comment="job custom classes"/>
+	<replace value="^IJOB[A-Z]{1,4}[a-z].*" comment="job custom interfaces"/>
+	
+	<replace value="^i_[A-Z].*" comment="public constants"/>
+	<replace value="^_[A-Z].*" comment="private constants"/>
+	<replace value="^__[A-Z].*" comment="protected constants"/>
+	<replace value="^___[A-Z].*" comment="internal constants"/>
+	
+	<replace value="^i_[a-z].*" comment="public methods/members"/>
+	<replace value="^_[a-z].*" comment="private methods/members"/>
+	<replace value="^__[a-z].*" comment="protected methods/members"/>
+	<replace value="^___[a-z].*" comment="internal methods/members"/>
+	
+	<replace value="^l[A-Z_].*" comment="local members"/>
+	<replace value="^a[A-Z_].*" comment="argument members"/>
+	
+	<non_replace value="^__construct$" comment=""/>
+	
+	<non_replace value="^_FILES$" comment=""/>
+	<non_replace value="^_COOKIE$" comment=""/>
+	<non_replace value="^_SESSION$" comment=""/>
+	<non_replace value="^_REQUEST$" comment=""/>
+	<non_replace value="^_SERVER$" comment=""/>
+	<non_replace value="^_POST$" comment=""/>
+	<non_replace value="^_GET$" comment=""/>
+	
+	<non_replace value="^DOCUMENT_ROOT$" comment=""/>
+	<non_replace value="^HTTP_HOST$" comment=""/>
+	<non_replace value="^HTTP_REFERER$" comment=""/>
+	<non_replace value="^HTTP_USER_AGENT$" comment=""/>
+	<non_replace value="^REMOTE_ADDR$" comment=""/>
+	<non_replace value="^REQUEST_URI$" comment=""/>
+	
+	<non_replace value="^IMAGETYPE_GIF$" comment=""/>
+	<non_replace value="^IMAGETYPE_PNG$" comment=""/>
+	<non_replace value="^IMAGETYPE_JPEG$" comment=""/>
+	
+	<non_replace value="^getName$" comment=""/>
+	<non_replace value="^getFile$" comment="Exception class native method"/>
+	<non_replace value="^getLine$" comment="Exception class native method"/>
+	<non_replace value="^getMessage$" comment="Exception class native method"/>
+	<non_replace value="^getTraceAsString$" comment="Exception class native method"/>
+	
+	<non_replace value="^PROJECT_NAME$" comment=""/>
+	<non_replace value="^DATABASE_TYPE.*$" comment=""/>
+	<non_replace value="^SERVER_TYPE.*$" comment=""/>
+	<non_replace value="^RELEASE.*$" comment=""/>
+	<non_replace value="^SITE_NAME$" comment=""/>
+	<non_replace value="^SHOW_ALL_REPORTS$" comment=""/>
+	<non_replace value="^SITE_FULL_NAME$" comment=""/>
+	<non_replace value="^ROOT_PHP_DIRECTORY$" comment=""/>
+	<non_replace value="^ROOT_EXTERNAL_PHP_DIRECTORY$" comment=""/>
+	
+	<non_replace value="^__CEntry$" comment="entry point class"/>
+	<non_replace value="^i_run$" comment="entry point method"/>
+	
+</patterns>

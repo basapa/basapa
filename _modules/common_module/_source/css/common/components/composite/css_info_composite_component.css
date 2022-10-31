@@ -1,0 +1,10 @@
+/*
+IMPORT_PRIORITY:7
+*/
+
+/*COMMON*/
+.css_info_composite_component							{}
+.css_info_composite_component .css_name					{display:inline-block; font-size:1.15em; background:#ff00ff; color:#194261; padding:16px 6px; text-align:left;}
+.css_info_composite_component .css_caption				{}
+.css_info_composite_component .css_description			{}
+.css_info_composite_component .css_hint					{}

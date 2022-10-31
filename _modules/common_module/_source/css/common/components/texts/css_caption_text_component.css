@@ -1,0 +1,14 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_caption_text_component							{}
+.css_caption_text_component .css_element			{}
+.css_caption_text_component .css_caption			{}
+.css_caption_text_component .css_description		{}
+.css_caption_text_component .css_hint				{}
+
+/*INTERACTIONS*/
+.css_caption_text_component a						{}
+.css_caption_text_component a:hover					{}

@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_warning_message_info								{background:#fffac8; border:#eeeab0 solid 1px;}
+.css_warning_message_info .css_header					{}
+.css_warning_message_info .css_body						{background:#fefef1;}
+.css_warning_message_info .css_footer					{}
+
+/*INTERACTIONS*/
+/*.css_warning_message_info .css_close_button				{background-position: -45px 0;}
+.css_warning_message_info .css_close_button:hover		{background-position: -45px -15px;}*/
+
+/*COMPONENTS*/
+.css_warning_message_info .css_text_component_message_title						{}
+.css_warning_message_info .css_text_component_element_message_title				{color:#d9d25b;}

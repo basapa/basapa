@@ -1,0 +1,25 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_registration_form											{}
+.css_registration_form .css_header								{}
+.css_registration_form .css_body								{}
+.css_registration_form .css_footer								{}
+
+/*COMPONENTS*/
+.css_registration_form .css_textfield_component_login				{}
+.css_registration_form .css_textfield_component_login_element		{width:150px;}
+
+.css_registration_form .css_textfield_component_password				{}
+.css_registration_form .css_textfield_component_password_element		{width:150px;}
+
+.css_registration_form .css_textfield_component_repeat_password				{}
+.css_registration_form .css_textfield_component_repeat_password_element		{width:150px;}
+
+.css_registration_form .css_textfield_component_email				{}
+.css_registration_form .css_textfield_component_email_element		{width:150px;}
+
+.css_registration_form .css_button_component_submit				{display:inline-block;}
+.css_registration_form .css_button_component_submit_element		{}

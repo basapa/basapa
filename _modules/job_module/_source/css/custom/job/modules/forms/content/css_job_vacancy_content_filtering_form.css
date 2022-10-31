@@ -1,0 +1,33 @@
+/*
+IMPORT_PRIORITY:0
+*/
+
+/*COMMON*/
+.css_job_vacancy_content_filtering_form						{display:block; margin:4px; padding:4px; background:#ffffff; color:black; border:#dddddd solid 1px;}
+.css_job_vacancy_content_filtering_form .css_header			{background:none; padding:0;}
+.css_job_vacancy_content_filtering_form .css_body			{}
+.css_job_vacancy_content_filtering_form .css_footer			{text-align:center;}
+
+.css_job_vacancy_content_filtering_form .css_text_component_form_name			{}
+.css_job_vacancy_content_filtering_form .css_text_component_element_form_name	{background:none; padding:2px; margin:4px 0 4px 10px; font-size:18px; font-weight:500;}
+
+/*COMPONENTS*/
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_addition_time_filters					{}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_addition_time_filters			{background:none; padding:2px; margin:4px 0 4px 4px;}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_addition_time_filters .css_item	{display:block;}
+
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_wage								{}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_wage						{background:none; padding:2px; margin:4px 0 4px 4px;}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_wage .css_item			{display:block;}
+
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_work_experience						{}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_work_experience				{background:none; padding:2px; margin:4px 0 4px 4px;}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_work_experience .css_item	{display:block;}
+
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_work_schedule					{}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_work_schedule			{background:none; padding:2px; margin:4px 0 4px 4px;}
+.css_job_vacancy_content_filtering_form .css_radiobutton_component_element_work_schedule .css_item	{display:block;}
+
+.css_job_vacancy_content_filtering_form .css_button_component_submit					{}
+.css_job_vacancy_content_filtering_form .css_button_component_element_submit			{padding:2px; margin:4px;}
+.css_job_vacancy_content_filtering_form .css_button_component_element_submit .css_name	{background:none;}

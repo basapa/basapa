@@ -1,0 +1,15 @@
+/*
+IMPORT_PRIORITY:5
+*/
+
+/*COMMON*/
+.css_v_simple_labellist_component								{}
+.css_v_simple_labellist_component .css_element					{}
+.css_v_simple_labellist_component .css_item						{display:block;}
+
+.css_v_simple_labellist_component .css_enabled					{}
+.css_v_simple_labellist_component .css_enabled:hover			{}
+.css_v_simple_labellist_component .css_disabled					{}
+.css_v_simple_labellist_component .css_selected					{}
+
+/*INTERACTIONS*/

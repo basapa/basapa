@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE translations
+[
+<!ENTITY SITE_NAME "MAIN BASAPA">
+<!ENTITY site_name "main.basapa.ru">
+<!ENTITY site_email "main@basapa.ru">
+
+<!--form-->
+	<!--form_messages-->
+		<!--error_messages_caption--><!ENTITY form_error_messages_caption "Ошибка">
+		<!--warning_messages_caption--><!ENTITY form_warning_messages_caption "Предупреждение">
+		<!--success_messages_caption--><!ENTITY form_success_messages_caption "Уведомление">
+
+		<!--empty_fields_message--><!ENTITY form_empty_fields_message "Вы заполнили не все обязательные поля.">
+		<!--empty_mandatory_fields_message--><!ENTITY form_empty_mandatory_fields_message "Вы заполнили не все обязательные поля.">
+	<!--/form_messages-->
+<!--/form-->
+
+<!--textfield-->
+	<!--description--><!ENTITY textfield_description "Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.">
+	<!--messages-->
+		<!--data_empty_message--><!ENTITY textfield_data_empty_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; необходимо заполнить.">
+		<!--illegal_chars_message--><!ENTITY textfield_illegal_chars_message "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.">
+		<!--illegal_chars_message_by_login_password--><!ENTITY textfield_illegal_chars_message_by_login_password "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.&lt;br/&gt;Разрешено вводить латинские буквы от&lt;b&gt;A&lt;/b&gt; до &lt;b&gt;Z&lt;/b&gt;, а также цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;_&lt;/b&gt;">
+		<!--illegal_chars_message_by_numbers--><!ENTITY textfield_illegal_chars_message_by_numbers "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.&lt;br/&gt;Разрешено вводить только цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt;">
+		<!--illegal_chars_message_by_phone_number--><!ENTITY textfield_illegal_chars_message_by_phone_number "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.&lt;br/&gt;Разрешено вводить только цифры от &lt;b&gt;0&lt;/b&gt; до &lt;b&gt;9&lt;/b&gt; и символ &lt;b&gt;+&lt;/b&gt;">
+		<!--wrong_chars_count_message--><!ENTITY textfield_wrong_chars_count_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.">
+	<!--/messages-->
+<!--/textfield-->
+
+<!--textarea-->
+	<!--description--><!ENTITY textarea_description "Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.">
+	<!--messages-->
+		<!--data_empty_message--><!ENTITY textarea_data_empty_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; необходимо заполнить.">
+		<!--illegal_chars_message--><!ENTITY textarea_illegal_chars_message "Вы использовали запрещенные символы для поля &lt;b&gt;#NAME#&lt;/b&gt;, которые нельзя вводить.">
+		<!--wrong_chars_count_message--><!ENTITY textarea_wrong_chars_count_message "Поле &lt;b&gt;#NAME#&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.">
+	<!--/messages-->
+<!--/textarea-->
+
+<!--radiobutton-->
+<!--/radiobutton-->
+
+<!--button-->
+<!--/button-->
+
+<!--image-->
+<!--/image-->
+
+<!--labellist-->
+<!--/labellist-->
+
+<!--text-->
+<!--/text-->
+]>
+<!--TRANSLATION STATUS: COMPLETED (REQUIRED, IN_PROGRESS, COMPLETED)-->
+<translations>
+	<pages>
+		<main_page>
+			<title>&SITE_NAME; - Генератор QR-кодов</title>
+			<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+			<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+		</main_page>
+
+		<support_page>
+			<title>&SITE_NAME; - Вопросы и предложения</title>
+			<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+			<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+		</support_page>
+		
+		<payment_page>
+			<title>&SITE_NAME; - Вопросы и предложения</title>
+			<meta_keywords>генератор qr-кодов, создать QR-код</meta_keywords>
+			<meta_description>На нашем сайте вы можете создать QR-код онлайн, а также можете узнать, что такое QR-code, зачем он нужен и как его прочитать.</meta_description>
+		</payment_page>
+		
+		<error_404_page>
+			<title>&SITE_NAME; - Ошибка 404</title>
+			<meta_keywords>ошибка 404</meta_keywords>
+			<meta_description>Неправильно набран адрес или такой страницы больше не существует.</meta_description>
+		</error_404_page>
+	</pages>
+
+	<forms>
+		<!--SUPPORT...-->
+		<support_form>
+			<form_name>Техподдержка</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+				<success_message>Сообщение отправлено.</success_message>
+			</form_messages>
+
+			<caption_textfield>
+				<name>Тема письма:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message></illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</caption_textfield>
+
+			<message_textarea>
+				<name>Сообщение:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message></illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</message_textarea>
+
+			<email_textfield>
+				<name>E-mail:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</illegal_chars_message>
+					<wrong_chars_count_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</wrong_chars_count_message>
+				</messages>
+			</email_textfield>
+
+			<submit_button>
+				<name>Отправить</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+			</about_mandatory_fields_note_text>
+		</support_form>
+		<!--...SUPPORT-->
+		
+		<!--PAYMENT...-->
+		<payment_form>
+			<form_name>Пожертвование</form_name>
+
+			<form_messages>
+				<error_messages_caption>&form_error_messages_caption;</error_messages_caption>
+				<warning_messages_caption>&form_warning_messages_caption;</warning_messages_caption>
+				<success_messages_caption>&form_success_messages_caption;</success_messages_caption>
+
+				<empty_mandatory_fields_message>&form_empty_mandatory_fields_message;</empty_mandatory_fields_message>
+				<failed_message>Отправить сообщение не удалось, пожалуйста, попробуйте еще раз.</failed_message>
+				<success_message>Сообщение отправлено.</success_message>
+			</form_messages>
+
+			<amount_textfield>
+				<name>Сумма пожертвования:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message></illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</amount_textfield>
+
+			<name_textfield>
+				<name>Имя:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message></illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</name_textfield>
+
+			<email_textfield>
+				<name>E-mail:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</illegal_chars_message>
+					<wrong_chars_count_message>В поле &lt;b&gt;#NAME#&lt;/b&gt; вы ввели некорректный или не существующий почтовый адрес.</wrong_chars_count_message>
+				</messages>
+			</email_textfield>
+
+			<message_textarea>
+				<name>Комментарий:</name>
+				<placeholder></placeholder>
+				<description>Текст должен содержать не менее #MIN_CHARS_COUNT# и не более #MAX_CHARS_COUNT# символов.</description>
+				<messages>
+					<data_empty_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; необходимо заполнить.</data_empty_message>
+					<illegal_chars_message></illegal_chars_message>
+					<wrong_chars_count_message>Поле &lt;b&gt;введите текст для кодирования&lt;/b&gt; должно содержать от &lt;b&gt;#MIN_CHARS_COUNT#&lt;/b&gt; до &lt;b&gt;#MAX_CHARS_COUNT#&lt;/b&gt; символов.</wrong_chars_count_message>
+				</messages>
+			</message_textarea>
+			
+			<submit_button>
+				<name>Пожертвовать</name>
+			</submit_button>
+
+			<about_mandatory_fields_note_text>
+				<value>&lt;span class="css_mandatory_field">*&lt;/span&gt; - обязательные поля для заполнения</value>
+			</about_mandatory_fields_note_text>
+		</payment_form>
+		<!--...PAYMENT-->
+	</forms>
+
+	<infos>
+		<navigations>
+			<!--ADDITIONAL PAGE NAVIGATION...-->
+			<additional_page_navigation_info>
+				<navigation_name>Доп. навигация страниц</navigation_name>
+
+				<additional_page_navigation_labellist>
+					<name></name>
+					<items>
+						<item>Вопросы и предложения</item>
+					</items>
+				</additional_page_navigation_labellist>
+			</additional_page_navigation_info>
+			<!--...ADDITIONAL PAGE NAVIGATION-->
+		</navigations>
+
+		<!--SITE CAPTION...-->
+		<site_caption_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<site_caption_description_text>
+				<value>Онлайн-генератор</value>
+			</site_caption_description_text>
+		</site_caption_info>
+		<!--...SITE CAPTION-->
+
+		<!--SITE COPYRIGHT...-->
+		<site_copyright_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<site_copyright_description_text>
+				<value>© 2017 &site_name; - Онлайн-генератор qr-кодов.&lt;br&gt;(для вопросов и предложений - &site_email;)</value>
+			</site_copyright_description_text>
+		</site_copyright_info>
+		<!--...SITE COPYRIGHT-->
+		
+		<!--SITE DESCRIPTION...-->
+		<site_description_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<site_description_description_text>
+				<value>Описание</value>
+			</site_description_description_text>
+		</site_description_info>
+		<!--...SITE DESCRIPTION-->
+		
+		<!--SITE DONATION...-->
+		<site_donation_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<site_donation_description_text>
+				<value>Оплата</value>
+			</site_donation_description_text>
+		</site_donation_info>
+		<!--...SITE DONATION-->
+		
+		<!--SITE DONATION STATS...-->
+		<site_donation_stats_info>
+			<info_name>&SITE_NAME;</info_name>
+
+			<site_donation_stats_description_text>
+				<value>Статистика оплаты</value>
+			</site_donation_stats_description_text>
+		</site_donation_stats_info>
+		<!--...SITE DONATION STATS-->
+		
+		<!--ERROR 404...-->
+		<error_404_text_info>
+			<info_name>Ошибка 404</info_name>
+		</error_404_text_info>
+		<!--...ERROR 404-->
+	</infos>
+</translations>

@@ -1,0 +1,14 @@
+/*
+IMPORT_PRIORITY:1
+*/
+
+/*COMMON*/
+.css_image_component									{text-align:left;}
+.css_image_component .css_element						{}
+.css_image_component .css_caption						{}
+.css_image_component .css_description					{}
+.css_image_component .css_hint							{}
+
+/*INTERACTIONS*/
+.css_image_component a									{}
+.css_image_component a:hover							{}

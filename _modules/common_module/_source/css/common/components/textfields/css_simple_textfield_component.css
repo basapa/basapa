@@ -1,0 +1,17 @@
+/*
+IMPORT_PRIORITY:6
+*/
+
+/*COMMON*/
+.css_simple_textfield_component								{}
+.css_simple_textfield_component .css_element				{}
+.css_simple_textfield_component .css_caption				{}
+.css_simple_textfield_component .css_description			{}
+.css_simple_textfield_component .css_hint					{}
+.css_simple_textfield_component .css_name					{}
+.css_simple_textfield_component .css_pre_name				{}
+.css_simple_textfield_component .css_post_name				{}
+
+/*INTERACTIONS*/
+.css_simple_textfield_component a							{}
+.css_simple_textfield_component a:hover						{}

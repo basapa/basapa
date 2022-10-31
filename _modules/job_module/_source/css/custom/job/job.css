@@ -1,0 +1,30 @@
+/*
+IMPORT_PRIORITY:99
+*/
+body										{width:auto; position:relative; font:14px fnt_tahoma,serif;}
+
+/*OVERRIDE COMMON STYLES*/
+/*TEXT*/
+.css_text_component .css_element			{background:none;}
+
+/*TEXTFIELD*/
+.css_textfield_component .css_name			{background:none;}
+.css_textfield_component .css_element		{background:none; border:#dddddd solid 1px;}
+
+/*LISTBOX*/
+.css_listbox_component .css_name			{background:none;}
+.css_listbox_component .css_element			{background:none; border:#dddddd solid 1px;}
+
+/*LABELLIST*/
+.css_labellist_component .css_name			{background:none;}
+.css_labellist_component .css_element		{background:none; border:#dddddd solid 1px;}
+.css_labellist_component .css_item_name		{font-size:16px;}
+
+/*RADIOBUTTON*/
+.css_radiobutton_component .css_name		{background:none; font-size:16px; font-weight:500;}
+
+/*IMAGE*/
+.css_image_component .css_name,
+.css_image_component .css_pre_name,
+.css_image_component .css_post_name			{background:none; font-size:16px; font-weight:500;}
+.css_image_component .css_element			{background:none;}
