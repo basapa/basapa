@@ -1,8 +1,7 @@
 # Basapa Website Framework
 
-This project is designed for both beginners and advanced users.
-The project was originally created as a simple site, but over time it has grown into something more. 
-For the most part, everything is completed, although it requires minor improvements.
+This project started as a simple website for exploring and learning web technologies, but gradually evolved into a more comprehensive and functional platform.
+It is now a working foundation for building websites of varying complexity, with room for further customization, development, and expansion.
 
 ## Installation
 
